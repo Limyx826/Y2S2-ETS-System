@@ -1,9 +1,6 @@
 # Y2S2-ETS-System
 Year 2 Sem 2 Infomation System project
 
-# TARC-DEL-Y1S1-2018-G4-VB-Assignment
-Y1S1 TARC DEL 2018 Group 4 Visual Basic Assignment
-
 # IMPORTANT
 This is for everyone using github. Due to the complexity of git, I decided to use only one branch but a problem will occur by doing this.
 
