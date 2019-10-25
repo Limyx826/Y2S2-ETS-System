@@ -49,10 +49,11 @@ Partial Class Frontpage
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox1.TabIndex = 1
-        Me.ComboBox1.Text = "0 Adult"
+        Me.ComboBox1.Text = "Adult"
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.Checked = False
         Me.DateTimePicker1.Location = New System.Drawing.Point(374, 185)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 22)
@@ -72,16 +73,16 @@ Partial Class Frontpage
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"0 Child", "1 Child", "2 Children", "3 Children", "4 Children", "5 Children", "6 Children"})
-        Me.ComboBox3.Location = New System.Drawing.Point(273, 262)
+        Me.ComboBox3.Location = New System.Drawing.Point(216, 262)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox3.TabIndex = 4
-        Me.ComboBox3.Text = "0 Children"
+        Me.ComboBox3.Text = "Child"
         '
         'Title
         '
         Me.Title.AutoSize = True
-        Me.Title.Location = New System.Drawing.Point(317, 73)
+        Me.Title.Location = New System.Drawing.Point(335, 73)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(145, 17)
         Me.Title.TabIndex = 5
