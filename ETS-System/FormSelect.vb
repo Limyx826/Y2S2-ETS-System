@@ -16,5 +16,18 @@
                 .Add(Frontpage.ComboBox3Child.SelectedItem)
             End With
         End With
+        If Frontpage.ComboBox2Time.SelectedIndex = 0 Then
+
+
+        ElseIf Frontpage.ComboBox2Time.SelectedIndex = 1 Then
+
+
+        ElseIf Frontpage.ComboBox2Time.SelectedIndex = 2 Then
+
+
+        Else
+
+
+        End If
     End Sub
 End Class

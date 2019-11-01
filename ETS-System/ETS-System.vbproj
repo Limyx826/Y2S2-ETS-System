@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormSeat.Designer.vb">
+      <DependentUpon>FormSeat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeat.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormSelect.Designer.vb">
       <DependentUpon>FormSelect.vb</DependentUpon>
     </Compile>
