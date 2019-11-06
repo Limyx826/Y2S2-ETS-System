@@ -91,7 +91,7 @@ Partial Class Frontpage
         'ComboBox4Origin
         '
         Me.ComboBox4Origin.FormattingEnabled = True
-        Me.ComboBox4Origin.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Rawang", "Kuala Lumpur", "KL Sentral"})
+        Me.ComboBox4Origin.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
         Me.ComboBox4Origin.Location = New System.Drawing.Point(38, 183)
         Me.ComboBox4Origin.Name = "ComboBox4Origin"
         Me.ComboBox4Origin.Size = New System.Drawing.Size(121, 24)
@@ -101,7 +101,7 @@ Partial Class Frontpage
         'ComboBox5Destination
         '
         Me.ComboBox5Destination.FormattingEnabled = True
-        Me.ComboBox5Destination.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Rawang", "Kuala Lumpur", "KL Sentral"})
+        Me.ComboBox5Destination.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
         Me.ComboBox5Destination.Location = New System.Drawing.Point(174, 183)
         Me.ComboBox5Destination.Name = "ComboBox5Destination"
         Me.ComboBox5Destination.Size = New System.Drawing.Size(121, 24)
