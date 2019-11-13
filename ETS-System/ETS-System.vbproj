@@ -115,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormSeat.resx">
+      <DependentUpon>FormSeat.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSelect.resx">
       <DependentUpon>FormSelect.vb</DependentUpon>
     </EmbeddedResource>
