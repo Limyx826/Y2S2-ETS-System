@@ -28,6 +28,7 @@ Partial Class FormSelect
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.NextButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListView1
@@ -92,11 +93,21 @@ Partial Class FormSelect
         Me.RadioButton1.Text = "RadioButton1"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
+        'NextButton
+        '
+        Me.NextButton.Location = New System.Drawing.Point(681, 382)
+        Me.NextButton.Name = "NextButton"
+        Me.NextButton.Size = New System.Drawing.Size(75, 23)
+        Me.NextButton.TabIndex = 37
+        Me.NextButton.Text = "Next"
+        Me.NextButton.UseVisualStyleBackColor = True
+        '
         'FormSelect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.NextButton)
         Me.Controls.Add(Me.RadioButton4)
         Me.Controls.Add(Me.RadioButton3)
         Me.Controls.Add(Me.RadioButton2)
@@ -116,4 +127,5 @@ Partial Class FormSelect
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents NextButton As Button
 End Class

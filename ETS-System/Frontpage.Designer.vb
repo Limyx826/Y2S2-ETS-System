@@ -23,13 +23,14 @@ Partial Class Frontpage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Next_button = New System.Windows.Forms.Button()
-        Me.ComboBox1Adult = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4Adult = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox2Time = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3Child = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3Time = New System.Windows.Forms.ComboBox()
+        Me.ComboBox5Child = New System.Windows.Forms.ComboBox()
         Me.Title = New System.Windows.Forms.Label()
-        Me.ComboBox4Origin = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5Destination = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1Origin = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2Destination = New System.Windows.Forms.ComboBox()
+        Me.ComboBox6Class = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Next_button
@@ -41,15 +42,15 @@ Partial Class Frontpage
         Me.Next_button.Text = "Search"
         Me.Next_button.UseVisualStyleBackColor = True
         '
-        'ComboBox1Adult
+        'ComboBox4Adult
         '
-        Me.ComboBox1Adult.FormattingEnabled = True
-        Me.ComboBox1Adult.Items.AddRange(New Object() {"0 Adult", "1 Adult", "2 Adult", "3 Adult", "4 Adult", "5 Adult", "6 Adult"})
-        Me.ComboBox1Adult.Location = New System.Drawing.Point(38, 262)
-        Me.ComboBox1Adult.Name = "ComboBox1Adult"
-        Me.ComboBox1Adult.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox1Adult.TabIndex = 1
-        Me.ComboBox1Adult.Text = "Adult"
+        Me.ComboBox4Adult.FormattingEnabled = True
+        Me.ComboBox4Adult.Items.AddRange(New Object() {"0 Adult", "1 Adult", "2 Adult", "3 Adult", "4 Adult", "5 Adult", "6 Adult"})
+        Me.ComboBox4Adult.Location = New System.Drawing.Point(38, 262)
+        Me.ComboBox4Adult.Name = "ComboBox4Adult"
+        Me.ComboBox4Adult.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox4Adult.TabIndex = 1
+        Me.ComboBox4Adult.Text = "Adult"
         '
         'DateTimePicker1
         '
@@ -59,25 +60,25 @@ Partial Class Frontpage
         Me.DateTimePicker1.Size = New System.Drawing.Size(246, 22)
         Me.DateTimePicker1.TabIndex = 2
         '
-        'ComboBox2Time
+        'ComboBox3Time
         '
-        Me.ComboBox2Time.FormattingEnabled = True
-        Me.ComboBox2Time.Items.AddRange(New Object() {"12:00 AM - 06:59 AM", "07:00 AM - 11:59 AM", "12:00 PM - 06:59 PM", "07:00 PM - 11:59 PM"})
-        Me.ComboBox2Time.Location = New System.Drawing.Point(576, 183)
-        Me.ComboBox2Time.Name = "ComboBox2Time"
-        Me.ComboBox2Time.Size = New System.Drawing.Size(194, 24)
-        Me.ComboBox2Time.TabIndex = 3
-        Me.ComboBox2Time.Text = "Travel Time"
+        Me.ComboBox3Time.FormattingEnabled = True
+        Me.ComboBox3Time.Items.AddRange(New Object() {"12:00 AM - 06:59 AM", "07:00 AM - 11:59 AM", "12:00 PM - 06:59 PM", "07:00 PM - 11:59 PM"})
+        Me.ComboBox3Time.Location = New System.Drawing.Point(576, 183)
+        Me.ComboBox3Time.Name = "ComboBox3Time"
+        Me.ComboBox3Time.Size = New System.Drawing.Size(194, 24)
+        Me.ComboBox3Time.TabIndex = 3
+        Me.ComboBox3Time.Text = "Travel Time"
         '
-        'ComboBox3Child
+        'ComboBox5Child
         '
-        Me.ComboBox3Child.FormattingEnabled = True
-        Me.ComboBox3Child.Items.AddRange(New Object() {"0 Child", "1 Child", "2 Children", "3 Children", "4 Children", "5 Children", "6 Children"})
-        Me.ComboBox3Child.Location = New System.Drawing.Point(174, 262)
-        Me.ComboBox3Child.Name = "ComboBox3Child"
-        Me.ComboBox3Child.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox3Child.TabIndex = 4
-        Me.ComboBox3Child.Text = "Child"
+        Me.ComboBox5Child.FormattingEnabled = True
+        Me.ComboBox5Child.Items.AddRange(New Object() {"0 Child", "1 Child", "2 Children", "3 Children", "4 Children", "5 Children", "6 Children"})
+        Me.ComboBox5Child.Location = New System.Drawing.Point(174, 262)
+        Me.ComboBox5Child.Name = "ComboBox5Child"
+        Me.ComboBox5Child.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox5Child.TabIndex = 4
+        Me.ComboBox5Child.Text = "Child"
         '
         'Title
         '
@@ -88,25 +89,33 @@ Partial Class Frontpage
         Me.Title.TabIndex = 5
         Me.Title.Text = "Express Train System"
         '
-        'ComboBox4Origin
+        'ComboBox1Origin
         '
-        Me.ComboBox4Origin.FormattingEnabled = True
-        Me.ComboBox4Origin.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
-        Me.ComboBox4Origin.Location = New System.Drawing.Point(38, 183)
-        Me.ComboBox4Origin.Name = "ComboBox4Origin"
-        Me.ComboBox4Origin.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox4Origin.TabIndex = 6
-        Me.ComboBox4Origin.Text = "Origin"
+        Me.ComboBox1Origin.FormattingEnabled = True
+        Me.ComboBox1Origin.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
+        Me.ComboBox1Origin.Location = New System.Drawing.Point(38, 183)
+        Me.ComboBox1Origin.Name = "ComboBox1Origin"
+        Me.ComboBox1Origin.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox1Origin.TabIndex = 6
+        Me.ComboBox1Origin.Text = "Origin"
         '
-        'ComboBox5Destination
+        'ComboBox2Destination
         '
-        Me.ComboBox5Destination.FormattingEnabled = True
-        Me.ComboBox5Destination.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
-        Me.ComboBox5Destination.Location = New System.Drawing.Point(174, 183)
-        Me.ComboBox5Destination.Name = "ComboBox5Destination"
-        Me.ComboBox5Destination.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox5Destination.TabIndex = 7
-        Me.ComboBox5Destination.Text = "Destination"
+        Me.ComboBox2Destination.FormattingEnabled = True
+        Me.ComboBox2Destination.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
+        Me.ComboBox2Destination.Location = New System.Drawing.Point(174, 183)
+        Me.ComboBox2Destination.Name = "ComboBox2Destination"
+        Me.ComboBox2Destination.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox2Destination.TabIndex = 7
+        Me.ComboBox2Destination.Text = "Destination"
+        '
+        'ComboBox6Class
+        '
+        Me.ComboBox6Class.FormattingEnabled = True
+        Me.ComboBox6Class.Location = New System.Drawing.Point(311, 260)
+        Me.ComboBox6Class.Name = "ComboBox6Class"
+        Me.ComboBox6Class.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox6Class.TabIndex = 8
         '
         'Frontpage
         '
@@ -114,13 +123,14 @@ Partial Class Frontpage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ComboBox5Destination)
-        Me.Controls.Add(Me.ComboBox4Origin)
+        Me.Controls.Add(Me.ComboBox6Class)
+        Me.Controls.Add(Me.ComboBox2Destination)
+        Me.Controls.Add(Me.ComboBox1Origin)
         Me.Controls.Add(Me.Title)
-        Me.Controls.Add(Me.ComboBox3Child)
-        Me.Controls.Add(Me.ComboBox2Time)
+        Me.Controls.Add(Me.ComboBox5Child)
+        Me.Controls.Add(Me.ComboBox3Time)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.ComboBox1Adult)
+        Me.Controls.Add(Me.ComboBox4Adult)
         Me.Controls.Add(Me.Next_button)
         Me.Name = "Frontpage"
         Me.Text = "Express Train System"
@@ -130,11 +140,12 @@ Partial Class Frontpage
     End Sub
 
     Friend WithEvents Next_button As Button
-    Friend WithEvents ComboBox1Adult As ComboBox
+    Friend WithEvents ComboBox4Adult As ComboBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents ComboBox2Time As ComboBox
-    Friend WithEvents ComboBox3Child As ComboBox
+    Friend WithEvents ComboBox3Time As ComboBox
+    Friend WithEvents ComboBox5Child As ComboBox
     Friend WithEvents Title As Label
-    Friend WithEvents ComboBox4Origin As ComboBox
-    Friend WithEvents ComboBox5Destination As ComboBox
+    Friend WithEvents ComboBox1Origin As ComboBox
+    Friend WithEvents ComboBox2Destination As ComboBox
+    Friend WithEvents ComboBox6Class As ComboBox
 End Class
