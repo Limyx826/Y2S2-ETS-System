@@ -12,8 +12,8 @@
                 .Add(Frontpage.ComboBox2Destination.SelectedItem)
                 .Add(Frontpage.DateTimePicker1.Value.Date)
                 .Add(Frontpage.ComboBox3Time.SelectedItem)
-                .Add(Frontpage.ComboBox4Adult.SelectedItem)
-                .Add(Frontpage.ComboBox5Child.SelectedItem)
+                .Add(Frontpage.ComboBox5Adult.SelectedItem)
+                .Add(Frontpage.ComboBox6Child.SelectedItem)
             End With
         End With
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then

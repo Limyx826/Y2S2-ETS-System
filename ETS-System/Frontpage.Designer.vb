@@ -23,14 +23,14 @@ Partial Class Frontpage
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Next_button = New System.Windows.Forms.Button()
-        Me.ComboBox4Adult = New System.Windows.Forms.ComboBox()
+        Me.ComboBox5Adult = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.ComboBox3Time = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5Child = New System.Windows.Forms.ComboBox()
+        Me.ComboBox6Child = New System.Windows.Forms.ComboBox()
         Me.Title = New System.Windows.Forms.Label()
         Me.ComboBox1Origin = New System.Windows.Forms.ComboBox()
         Me.ComboBox2Destination = New System.Windows.Forms.ComboBox()
-        Me.ComboBox6Class = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4Class = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Next_button
@@ -42,15 +42,15 @@ Partial Class Frontpage
         Me.Next_button.Text = "Search"
         Me.Next_button.UseVisualStyleBackColor = True
         '
-        'ComboBox4Adult
+        'ComboBox5Adult
         '
-        Me.ComboBox4Adult.FormattingEnabled = True
-        Me.ComboBox4Adult.Items.AddRange(New Object() {"0 Adult", "1 Adult", "2 Adult", "3 Adult", "4 Adult", "5 Adult", "6 Adult"})
-        Me.ComboBox4Adult.Location = New System.Drawing.Point(38, 262)
-        Me.ComboBox4Adult.Name = "ComboBox4Adult"
-        Me.ComboBox4Adult.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox4Adult.TabIndex = 1
-        Me.ComboBox4Adult.Text = "Adult"
+        Me.ComboBox5Adult.FormattingEnabled = True
+        Me.ComboBox5Adult.Items.AddRange(New Object() {"0 Adult", "1 Adult", "2 Adult", "3 Adult", "4 Adult", "5 Adult", "6 Adult"})
+        Me.ComboBox5Adult.Location = New System.Drawing.Point(174, 262)
+        Me.ComboBox5Adult.Name = "ComboBox5Adult"
+        Me.ComboBox5Adult.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox5Adult.TabIndex = 1
+        Me.ComboBox5Adult.Text = "Adult"
         '
         'DateTimePicker1
         '
@@ -70,15 +70,15 @@ Partial Class Frontpage
         Me.ComboBox3Time.TabIndex = 3
         Me.ComboBox3Time.Text = "Travel Time"
         '
-        'ComboBox5Child
+        'ComboBox6Child
         '
-        Me.ComboBox5Child.FormattingEnabled = True
-        Me.ComboBox5Child.Items.AddRange(New Object() {"0 Child", "1 Child", "2 Children", "3 Children", "4 Children", "5 Children", "6 Children"})
-        Me.ComboBox5Child.Location = New System.Drawing.Point(174, 262)
-        Me.ComboBox5Child.Name = "ComboBox5Child"
-        Me.ComboBox5Child.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox5Child.TabIndex = 4
-        Me.ComboBox5Child.Text = "Child"
+        Me.ComboBox6Child.FormattingEnabled = True
+        Me.ComboBox6Child.Items.AddRange(New Object() {"0 Child", "1 Child", "2 Children", "3 Children", "4 Children", "5 Children", "6 Children"})
+        Me.ComboBox6Child.Location = New System.Drawing.Point(310, 262)
+        Me.ComboBox6Child.Name = "ComboBox6Child"
+        Me.ComboBox6Child.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox6Child.TabIndex = 4
+        Me.ComboBox6Child.Text = "Child"
         '
         'Title
         '
@@ -109,13 +109,15 @@ Partial Class Frontpage
         Me.ComboBox2Destination.TabIndex = 7
         Me.ComboBox2Destination.Text = "Destination"
         '
-        'ComboBox6Class
+        'ComboBox4Class
         '
-        Me.ComboBox6Class.FormattingEnabled = True
-        Me.ComboBox6Class.Location = New System.Drawing.Point(311, 260)
-        Me.ComboBox6Class.Name = "ComboBox6Class"
-        Me.ComboBox6Class.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox6Class.TabIndex = 8
+        Me.ComboBox4Class.FormattingEnabled = True
+        Me.ComboBox4Class.Items.AddRange(New Object() {"Standard Class", "Business Class"})
+        Me.ComboBox4Class.Location = New System.Drawing.Point(38, 262)
+        Me.ComboBox4Class.Name = "ComboBox4Class"
+        Me.ComboBox4Class.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox4Class.TabIndex = 8
+        Me.ComboBox4Class.Text = "Class"
         '
         'Frontpage
         '
@@ -123,14 +125,14 @@ Partial Class Frontpage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ComboBox6Class)
+        Me.Controls.Add(Me.ComboBox4Class)
         Me.Controls.Add(Me.ComboBox2Destination)
         Me.Controls.Add(Me.ComboBox1Origin)
         Me.Controls.Add(Me.Title)
-        Me.Controls.Add(Me.ComboBox5Child)
+        Me.Controls.Add(Me.ComboBox6Child)
         Me.Controls.Add(Me.ComboBox3Time)
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.ComboBox4Adult)
+        Me.Controls.Add(Me.ComboBox5Adult)
         Me.Controls.Add(Me.Next_button)
         Me.Name = "Frontpage"
         Me.Text = "Express Train System"
@@ -140,12 +142,12 @@ Partial Class Frontpage
     End Sub
 
     Friend WithEvents Next_button As Button
-    Friend WithEvents ComboBox4Adult As ComboBox
+    Friend WithEvents ComboBox5Adult As ComboBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents ComboBox3Time As ComboBox
-    Friend WithEvents ComboBox5Child As ComboBox
+    Friend WithEvents ComboBox6Child As ComboBox
     Friend WithEvents Title As Label
     Friend WithEvents ComboBox1Origin As ComboBox
     Friend WithEvents ComboBox2Destination As ComboBox
-    Friend WithEvents ComboBox6Class As ComboBox
+    Friend WithEvents ComboBox4Class As ComboBox
 End Class
