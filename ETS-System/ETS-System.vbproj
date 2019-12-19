@@ -95,6 +95,24 @@
     <Compile Include="FormConfirm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormCusInfo.Designer.vb">
+      <DependentUpon>FormCusInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCusInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMemReg.Designer.vb">
+      <DependentUpon>FormMemReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMemReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormSeat.Designer.vb">
       <DependentUpon>FormSeat.vb</DependentUpon>
     </Compile>

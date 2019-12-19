@@ -28,6 +28,7 @@ Partial Class FormSeatTest
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.RemoveButton = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SetButton
@@ -67,11 +68,21 @@ Partial Class FormSeatTest
         Me.RemoveButton.Text = "Remove"
         Me.RemoveButton.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(632, 383)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Hide"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FormSeatTest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RemoveButton)
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.ListBox1)
@@ -87,4 +98,5 @@ Partial Class FormSeatTest
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents RemoveButton As Button
+    Friend WithEvents Button1 As Button
 End Class
