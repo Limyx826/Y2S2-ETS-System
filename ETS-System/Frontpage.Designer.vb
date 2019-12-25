@@ -31,6 +31,7 @@ Partial Class Frontpage
         Me.ComboBox1Origin = New System.Windows.Forms.ComboBox()
         Me.ComboBox2Destination = New System.Windows.Forms.ComboBox()
         Me.ComboBox4Class = New System.Windows.Forms.ComboBox()
+        Me.Login_Button = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Next_button
@@ -119,12 +120,22 @@ Partial Class Frontpage
         Me.ComboBox4Class.TabIndex = 8
         Me.ComboBox4Class.Text = "Class"
         '
+        'Login_Button
+        '
+        Me.Login_Button.Location = New System.Drawing.Point(685, 39)
+        Me.Login_Button.Name = "Login_Button"
+        Me.Login_Button.Size = New System.Drawing.Size(75, 25)
+        Me.Login_Button.TabIndex = 9
+        Me.Login_Button.Text = "Login"
+        Me.Login_Button.UseVisualStyleBackColor = True
+        '
         'Frontpage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Login_Button)
         Me.Controls.Add(Me.ComboBox4Class)
         Me.Controls.Add(Me.ComboBox2Destination)
         Me.Controls.Add(Me.ComboBox1Origin)
@@ -150,4 +161,5 @@ Partial Class Frontpage
     Friend WithEvents ComboBox1Origin As ComboBox
     Friend WithEvents ComboBox2Destination As ComboBox
     Friend WithEvents ComboBox4Class As ComboBox
+    Friend WithEvents Login_Button As Button
 End Class

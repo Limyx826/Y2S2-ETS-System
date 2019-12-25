@@ -36,4 +36,9 @@
         End If
 
     End Sub
+
+    Private Sub Login_Button_Click(sender As Object, e As EventArgs) Handles Login_Button.Click
+        FormLogin.Show()
+        Me.Hide()
+    End Sub
 End Class

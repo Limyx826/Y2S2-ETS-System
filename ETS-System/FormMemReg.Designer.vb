@@ -22,9 +22,29 @@ Partial Class FormMemReg
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.Back_Button = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'Back_Button
+        '
+        Me.Back_Button.Location = New System.Drawing.Point(353, 212)
+        Me.Back_Button.Name = "Back_Button"
+        Me.Back_Button.Size = New System.Drawing.Size(75, 23)
+        Me.Back_Button.TabIndex = 0
+        Me.Back_Button.Text = "Back"
+        Me.Back_Button.UseVisualStyleBackColor = True
+        '
+        'FormMemReg
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Back_Button)
+        Me.Name = "FormMemReg"
         Me.Text = "FormMemReg"
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents Back_Button As Button
 End Class

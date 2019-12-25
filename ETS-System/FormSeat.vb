@@ -65,5 +65,41 @@
     Private Sub B9A_Click(sender As Object, e As EventArgs) Handles B9A.Click
         Choose(B9A)
     End Sub
+
+    Private Sub B1B_Click(sender As Object, e As EventArgs) Handles B1B.Click
+        Choose(B1B)
+    End Sub
+
+    Private Sub B2B_Click(sender As Object, e As EventArgs) Handles B2B.Click
+        Choose(B2B)
+    End Sub
+
+    Private Sub B3B_Click(sender As Object, e As EventArgs) Handles B3B.Click
+        Choose(B3B)
+    End Sub
+
+    Private Sub B4B_Click(sender As Object, e As EventArgs) Handles B4B.Click
+        Choose(B4B)
+    End Sub
+
+    Private Sub B5B_Click(sender As Object, e As EventArgs) Handles B5B.Click
+        Choose(B5B)
+    End Sub
+
+    Private Sub B6B_Click(sender As Object, e As EventArgs) Handles B6B.Click
+        Choose(B6B)
+    End Sub
+
+    Private Sub B7B_Click(sender As Object, e As EventArgs) Handles B7B.Click
+        Choose(B7B)
+    End Sub
+
+    Private Sub B8B_Click(sender As Object, e As EventArgs) Handles B8B.Click
+        Choose(B8B)
+    End Sub
+
+    Private Sub B9B_Click(sender As Object, e As EventArgs) Handles B9B.Click
+        Choose(B9B)
+    End Sub
 End Class
 
