@@ -1,5 +1,6 @@
-﻿Public Class FormSelect
+﻿Imports System.Data.OleDb
 
+Public Class FormSelect
     Private Sub Back_button_Click(sender As Object, e As EventArgs) Handles Back_button.Click
         Frontpage.Show()
         Me.Close()
@@ -17,6 +18,8 @@
             End With
         End With
 
+
+
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
 
 
@@ -31,4 +34,5 @@
 
         End If
     End Sub
+
 End Class

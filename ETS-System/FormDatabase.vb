@@ -9,4 +9,11 @@
         Me.Close()
         Frontpage.Show()
     End Sub
+
+    Private Sub TimetableBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles TimetableBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.TimetableBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.JCLODataSet)
+
+    End Sub
 End Class

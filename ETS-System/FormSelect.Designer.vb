@@ -22,7 +22,6 @@ Partial Class FormSelect
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Back_button = New System.Windows.Forms.Button()
         Me.RB4 = New System.Windows.Forms.RadioButton()
@@ -30,8 +29,8 @@ Partial Class FormSelect
         Me.RB2 = New System.Windows.Forms.RadioButton()
         Me.RB1 = New System.Windows.Forms.RadioButton()
         Me.NextButton = New System.Windows.Forms.Button()
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.JCLODataSet = New ETS_System.JCLODataSet()
+        CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ListView1
@@ -105,6 +104,11 @@ Partial Class FormSelect
         Me.NextButton.Text = "Next"
         Me.NextButton.UseVisualStyleBackColor = True
         '
+        'JCLODataSet
+        '
+        Me.JCLODataSet.DataSetName = "JCLODataSet"
+        Me.JCLODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'FormSelect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -119,7 +123,7 @@ Partial Class FormSelect
         Me.Controls.Add(Me.ListView1)
         Me.Name = "FormSelect"
         Me.Text = "FormSelect"
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -132,5 +136,5 @@ Partial Class FormSelect
     Friend WithEvents RB2 As RadioButton
     Friend WithEvents RB1 As RadioButton
     Friend WithEvents NextButton As Button
-    Friend WithEvents BindingSource1 As BindingSource
+    Friend WithEvents JCLODataSet As JCLODataSet
 End Class
