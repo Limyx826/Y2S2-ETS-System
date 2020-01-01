@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormDatabase
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,10 @@ Partial Class FormDatabase
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.JCLODataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JCLODataSet = New ETS_System.JCLODataSet()
-        Me.TimetableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TimetableTableAdapter = New ETS_System.JCLODataSetTableAdapters.TimetableTableAdapter()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PadangBesarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ArauDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -45,10 +41,15 @@ Partial Class FormDatabase
         Me.TanjungMalimDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KualaLumpurDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KLSentralDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TimetableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JCLODataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JCLODataSet = New ETS_System.JCLODataSet()
+        Me.TimetableTableAdapter = New ETS_System.JCLODataSetTableAdapters.TimetableTableAdapter()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JCLODataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -63,25 +64,6 @@ Partial Class FormDatabase
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(708, 198)
         Me.DataGridView1.TabIndex = 0
-        '
-        'JCLODataSetBindingSource
-        '
-        Me.JCLODataSetBindingSource.DataSource = Me.JCLODataSet
-        Me.JCLODataSetBindingSource.Position = 0
-        '
-        'JCLODataSet
-        '
-        Me.JCLODataSet.DataSetName = "JCLODataSet"
-        Me.JCLODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TimetableBindingSource
-        '
-        Me.TimetableBindingSource.DataMember = "Timetable"
-        Me.TimetableBindingSource.DataSource = Me.JCLODataSetBindingSource
-        '
-        'TimetableTableAdapter
-        '
-        Me.TimetableTableAdapter.ClearBeforeFill = True
         '
         'IDDataGridViewTextBoxColumn
         '
@@ -219,18 +201,47 @@ Partial Class FormDatabase
         Me.KLSentralDataGridViewTextBoxColumn.Name = "KLSentralDataGridViewTextBoxColumn"
         Me.KLSentralDataGridViewTextBoxColumn.Width = 125
         '
+        'TimetableBindingSource
+        '
+        Me.TimetableBindingSource.DataMember = "Timetable"
+        Me.TimetableBindingSource.DataSource = Me.JCLODataSetBindingSource
+        '
+        'JCLODataSetBindingSource
+        '
+        Me.JCLODataSetBindingSource.DataSource = Me.JCLODataSet
+        Me.JCLODataSetBindingSource.Position = 0
+        '
+        'JCLODataSet
+        '
+        Me.JCLODataSet.DataSetName = "JCLODataSet"
+        Me.JCLODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TimetableTableAdapter
+        '
+        Me.TimetableTableAdapter.ClearBeforeFill = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(63, 355)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Back"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FormDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "FormDatabase"
         Me.Text = "FormDatabase"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JCLODataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -257,4 +268,5 @@ Partial Class FormDatabase
     Friend WithEvents TanjungMalimDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents KualaLumpurDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents KLSentralDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class

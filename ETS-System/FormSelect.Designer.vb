@@ -22,13 +22,16 @@ Partial Class FormSelect
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Back_button = New System.Windows.Forms.Button()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RB4 = New System.Windows.Forms.RadioButton()
+        Me.RB3 = New System.Windows.Forms.RadioButton()
+        Me.RB2 = New System.Windows.Forms.RadioButton()
+        Me.RB1 = New System.Windows.Forms.RadioButton()
         Me.NextButton = New System.Windows.Forms.Button()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ListView1
@@ -49,49 +52,49 @@ Partial Class FormSelect
         Me.Back_button.Text = "Back"
         Me.Back_button.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'RB4
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(58, 312)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton4.TabIndex = 24
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "RadioButton4"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.RB4.AutoSize = True
+        Me.RB4.Location = New System.Drawing.Point(58, 312)
+        Me.RB4.Name = "RB4"
+        Me.RB4.Size = New System.Drawing.Size(115, 21)
+        Me.RB4.TabIndex = 24
+        Me.RB4.TabStop = True
+        Me.RB4.Text = "RadioButton4"
+        Me.RB4.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'RB3
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(58, 265)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton3.TabIndex = 23
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.RB3.AutoSize = True
+        Me.RB3.Location = New System.Drawing.Point(58, 265)
+        Me.RB3.Name = "RB3"
+        Me.RB3.Size = New System.Drawing.Size(115, 21)
+        Me.RB3.TabIndex = 23
+        Me.RB3.TabStop = True
+        Me.RB3.Text = "RadioButton3"
+        Me.RB3.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'RB2
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(58, 220)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton2.TabIndex = 22
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RB2.AutoSize = True
+        Me.RB2.Location = New System.Drawing.Point(58, 220)
+        Me.RB2.Name = "RB2"
+        Me.RB2.Size = New System.Drawing.Size(115, 21)
+        Me.RB2.TabIndex = 22
+        Me.RB2.TabStop = True
+        Me.RB2.Text = "RadioButton2"
+        Me.RB2.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'RB1
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(58, 172)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton1.TabIndex = 21
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RB1.AutoSize = True
+        Me.RB1.Location = New System.Drawing.Point(58, 172)
+        Me.RB1.Name = "RB1"
+        Me.RB1.Size = New System.Drawing.Size(115, 21)
+        Me.RB1.TabIndex = 21
+        Me.RB1.TabStop = True
+        Me.RB1.Text = "RadioButton1"
+        Me.RB1.UseVisualStyleBackColor = True
         '
         'NextButton
         '
@@ -108,14 +111,15 @@ Partial Class FormSelect
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.NextButton)
-        Me.Controls.Add(Me.RadioButton4)
-        Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.RB4)
+        Me.Controls.Add(Me.RB3)
+        Me.Controls.Add(Me.RB2)
+        Me.Controls.Add(Me.RB1)
         Me.Controls.Add(Me.Back_button)
         Me.Controls.Add(Me.ListView1)
         Me.Name = "FormSelect"
         Me.Text = "FormSelect"
+        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -123,9 +127,10 @@ Partial Class FormSelect
 
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Back_button As Button
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RB4 As RadioButton
+    Friend WithEvents RB3 As RadioButton
+    Friend WithEvents RB2 As RadioButton
+    Friend WithEvents RB1 As RadioButton
     Friend WithEvents NextButton As Button
+    Friend WithEvents BindingSource1 As BindingSource
 End Class

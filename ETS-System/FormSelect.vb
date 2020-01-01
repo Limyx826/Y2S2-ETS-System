@@ -16,6 +16,7 @@
                 .Add(Frontpage.ComboBox6Child.SelectedItem)
             End With
         End With
+
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
 
 

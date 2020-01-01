@@ -41,4 +41,9 @@
         FormLogin.Show()
         Me.Hide()
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        FormDatabase.Show()
+        Me.Hide()
+    End Sub
 End Class

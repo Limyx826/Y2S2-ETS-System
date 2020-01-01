@@ -32,6 +32,11 @@ Partial Class Frontpage
         Me.ComboBox2Destination = New System.Windows.Forms.ComboBox()
         Me.ComboBox4Class = New System.Windows.Forms.ComboBox()
         Me.Login_Button = New System.Windows.Forms.Button()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RBOneWay = New System.Windows.Forms.RadioButton()
+        Me.RBReturn = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Next_button
@@ -129,12 +134,56 @@ Partial Class Frontpage
         Me.Login_Button.Text = "Login"
         Me.Login_Button.UseVisualStyleBackColor = True
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(35, 39)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(69, 17)
+        Me.LinkLabel1.TabIndex = 10
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Database"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RBReturn)
+        Me.GroupBox1.Controls.Add(Me.RBOneWay)
+        Me.GroupBox1.Location = New System.Drawing.Point(38, 119)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(264, 58)
+        Me.GroupBox1.TabIndex = 11
+        Me.GroupBox1.TabStop = False
+        '
+        'RBOneWay
+        '
+        Me.RBOneWay.AutoSize = True
+        Me.RBOneWay.Location = New System.Drawing.Point(20, 21)
+        Me.RBOneWay.Name = "RBOneWay"
+        Me.RBOneWay.Size = New System.Drawing.Size(88, 21)
+        Me.RBOneWay.TabIndex = 0
+        Me.RBOneWay.TabStop = True
+        Me.RBOneWay.Text = "One Way"
+        Me.RBOneWay.UseVisualStyleBackColor = True
+        '
+        'RBReturn
+        '
+        Me.RBReturn.AutoSize = True
+        Me.RBReturn.Location = New System.Drawing.Point(154, 21)
+        Me.RBReturn.Name = "RBReturn"
+        Me.RBReturn.Size = New System.Drawing.Size(72, 21)
+        Me.RBReturn.TabIndex = 12
+        Me.RBReturn.TabStop = True
+        Me.RBReturn.Text = "Return"
+        Me.RBReturn.UseVisualStyleBackColor = True
+        '
         'Frontpage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Login_Button)
         Me.Controls.Add(Me.ComboBox4Class)
         Me.Controls.Add(Me.ComboBox2Destination)
@@ -147,6 +196,8 @@ Partial Class Frontpage
         Me.Controls.Add(Me.Next_button)
         Me.Name = "Frontpage"
         Me.Text = "Express Train System"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -162,4 +213,8 @@ Partial Class Frontpage
     Friend WithEvents ComboBox2Destination As ComboBox
     Friend WithEvents ComboBox4Class As ComboBox
     Friend WithEvents Login_Button As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents RBReturn As RadioButton
+    Friend WithEvents RBOneWay As RadioButton
 End Class

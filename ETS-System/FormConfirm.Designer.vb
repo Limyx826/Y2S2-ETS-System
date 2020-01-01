@@ -23,9 +23,9 @@ Partial Class FormConfirm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.RBDebit = New System.Windows.Forms.RadioButton()
+        Me.RBCredit = New System.Windows.Forms.RadioButton()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -33,36 +33,14 @@ Partial Class FormConfirm
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.RBDebit)
+        Me.GroupBox1.Controls.Add(Me.RBCredit)
         Me.GroupBox1.Location = New System.Drawing.Point(187, 281)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(501, 140)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(24, 57)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(66, 21)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Credit"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(293, 57)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(62, 21)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Debit"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.GroupBox1.Text = "Payment"
         '
         'Button1
         '
@@ -72,6 +50,28 @@ Partial Class FormConfirm
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'RBDebit
+        '
+        Me.RBDebit.AutoSize = True
+        Me.RBDebit.Location = New System.Drawing.Point(293, 57)
+        Me.RBDebit.Name = "RBDebit"
+        Me.RBDebit.Size = New System.Drawing.Size(62, 21)
+        Me.RBDebit.TabIndex = 1
+        Me.RBDebit.TabStop = True
+        Me.RBDebit.Text = "Debit"
+        Me.RBDebit.UseVisualStyleBackColor = True
+        '
+        'RBCredit
+        '
+        Me.RBCredit.AutoSize = True
+        Me.RBCredit.Location = New System.Drawing.Point(24, 57)
+        Me.RBCredit.Name = "RBCredit"
+        Me.RBCredit.Size = New System.Drawing.Size(66, 21)
+        Me.RBCredit.TabIndex = 0
+        Me.RBCredit.TabStop = True
+        Me.RBCredit.Text = "Credit"
+        Me.RBCredit.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -99,7 +99,7 @@ Partial Class FormConfirm
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RBDebit As RadioButton
+    Friend WithEvents RBCredit As RadioButton
     Friend WithEvents Button2 As Button
 End Class
