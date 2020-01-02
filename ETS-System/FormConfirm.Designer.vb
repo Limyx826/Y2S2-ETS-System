@@ -28,9 +28,9 @@ Partial Class FormConfirm
         Me.RBDebit = New System.Windows.Forms.RadioButton()
         Me.RBCredit = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -43,14 +43,14 @@ Partial Class FormConfirm
         Me.GroupBox1.Controls.Add(Me.RBCredit)
         Me.GroupBox1.Location = New System.Drawing.Point(38, 339)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(650, 181)
+        Me.GroupBox1.Size = New System.Drawing.Size(711, 181)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment"
         '
         'Confirm_Button
         '
-        Me.Confirm_Button.Location = New System.Drawing.Point(263, 92)
+        Me.Confirm_Button.Location = New System.Drawing.Point(305, 89)
         Me.Confirm_Button.Name = "Confirm_Button"
         Me.Confirm_Button.Size = New System.Drawing.Size(75, 23)
         Me.Confirm_Button.TabIndex = 2
@@ -59,7 +59,7 @@ Partial Class FormConfirm
         '
         'Return_Button
         '
-        Me.Return_Button.Location = New System.Drawing.Point(263, 142)
+        Me.Return_Button.Location = New System.Drawing.Point(305, 139)
         Me.Return_Button.Name = "Return_Button"
         Me.Return_Button.Size = New System.Drawing.Size(75, 23)
         Me.Return_Button.TabIndex = 1
@@ -69,7 +69,7 @@ Partial Class FormConfirm
         'RBDebit
         '
         Me.RBDebit.AutoSize = True
-        Me.RBDebit.Location = New System.Drawing.Point(276, 34)
+        Me.RBDebit.Location = New System.Drawing.Point(415, 34)
         Me.RBDebit.Name = "RBDebit"
         Me.RBDebit.Size = New System.Drawing.Size(62, 21)
         Me.RBDebit.TabIndex = 1
@@ -93,21 +93,21 @@ Partial Class FormConfirm
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Location = New System.Drawing.Point(588, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(45, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 305)
+        Me.GroupBox2.Size = New System.Drawing.Size(704, 305)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Journey Summary"
         '
-        'Label1
+        'Label3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 60)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(27, 146)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(51, 17)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Label3"
         '
         'Label2
         '
@@ -118,14 +118,14 @@ Partial Class FormConfirm
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Label2"
         '
-        'Label3
+        'Label1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(27, 146)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 17)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Label3"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(27, 60)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(51, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
         '
         'FormConfirm
         '
