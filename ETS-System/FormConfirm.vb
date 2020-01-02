@@ -1,4 +1,6 @@
 ﻿Public Class FormConfirm
+    Const TrainPrice1S As Double = 7
+
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
