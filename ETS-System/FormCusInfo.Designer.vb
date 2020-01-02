@@ -109,6 +109,7 @@ Partial Class FormCusInfo
         '
         'FlowLayoutPanel1
         '
+        Me.FlowLayoutPanel1.AutoScroll = True
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel1)
         Me.FlowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(50, 12)
@@ -116,6 +117,7 @@ Partial Class FormCusInfo
         Me.FlowLayoutPanel1.Padding = New System.Windows.Forms.Padding(10, 5, 5, 0)
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(722, 359)
         Me.FlowLayoutPanel1.TabIndex = 3
+        Me.FlowLayoutPanel1.WrapContents = False
         '
         'Button_Add
         '
