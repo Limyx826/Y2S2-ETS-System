@@ -1,4 +1,14 @@
 ﻿Public Class Frontpage
+    Private Sub Frontpage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LinkLabel1.Visible = False
+        LabelReturn.Visible = False
+        DateTimePicker2.Visible = False
+        DateTimePicker2.Enabled = False
+
+        DateTimePicker1.MinDate = Today.Date
+        DateTimePicker2.MinDate = Today.Date
+    End Sub
+
     Private Sub Next_button_Click(sender As Object, e As EventArgs) Handles Next_button.Click
         If ComboBox1Origin.Text = "Origin" Then
             MessageBox.Show("Invalid origin", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
@@ -47,13 +57,6 @@
         Me.Hide()
     End Sub
 
-    Private Sub Frontpage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LinkLabel1.Visible = False
-        LabelReturn.Visible = False
-        DateTimePicker2.Visible = False
-        DateTimePicker2.Enabled = False
-    End Sub
-
     Private Sub RBOneWay_CheckedChanged(sender As Object, e As EventArgs) Handles RBOneWay.CheckedChanged
         LabelReturn.Visible = False
         DateTimePicker2.Visible = False
@@ -64,5 +67,14 @@
         LabelReturn.Visible = True
         DateTimePicker2.Visible = True
         DateTimePicker2.Enabled = True
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+        'If DateTimePicker1.Value = Today.Date Then
+        '    If Today.TimeOfDay < New DateTime(0, 0, 0, Hour.6) Then
+
+        '    End If
+        'End If
+
     End Sub
 End Class

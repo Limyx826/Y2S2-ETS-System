@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormMemReg
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,20 +20,22 @@ Partial Class FormMemReg
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Back_Button = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.EmailTextBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ICTextBox = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Register_Button = New System.Windows.Forms.Button()
+        Me.UsernameTextBox = New System.Windows.Forms.TextBox()
+        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
+        Me.ConPassTextBox = New System.Windows.Forms.TextBox()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.SuspendLayout()
         '
         'Back_Button
@@ -45,111 +47,119 @@ Partial Class FormMemReg
         Me.Back_Button.Text = "Back"
         Me.Back_Button.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'EmailTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(262, 60)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 1
+        Me.EmailTextBox.Location = New System.Drawing.Point(262, 60)
+        Me.EmailTextBox.Name = "EmailTextBox"
+        Me.EmailTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.EmailTextBox.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(92, 63)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 17)
+        Me.Label1.Size = New System.Drawing.Size(47, 17)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Email"
+        Me.Label1.Text = "Email*"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(92, 122)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(142, 17)
+        Me.Label2.Size = New System.Drawing.Size(147, 17)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "IC / Passport Number"
+        Me.Label2.Text = "IC / Passport Number*"
         '
-        'TextBox2
+        'ICTextBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(262, 116)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox2.TabIndex = 4
+        Me.ICTextBox.Location = New System.Drawing.Point(262, 116)
+        Me.ICTextBox.Name = "ICTextBox"
+        Me.ICTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.ICTextBox.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(92, 183)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 17)
+        Me.Label3.Size = New System.Drawing.Size(78, 17)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Username"
+        Me.Label3.Text = "Username*"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(92, 239)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 17)
+        Me.Label4.Size = New System.Drawing.Size(74, 17)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Password"
+        Me.Label4.Text = "Password*"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(92, 294)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(121, 17)
+        Me.Label5.Size = New System.Drawing.Size(126, 17)
         Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Confirm Password"
+        Me.Label5.Text = "Confirm Password*"
         '
-        'Button1
+        'Register_Button
         '
-        Me.Button1.Location = New System.Drawing.Point(662, 490)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Register"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Register_Button.Enabled = False
+        Me.Register_Button.Location = New System.Drawing.Point(662, 490)
+        Me.Register_Button.Name = "Register_Button"
+        Me.Register_Button.Size = New System.Drawing.Size(75, 23)
+        Me.Register_Button.TabIndex = 8
+        Me.Register_Button.Text = "Register"
+        Me.Register_Button.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'UsernameTextBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(262, 178)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox3.TabIndex = 9
+        Me.UsernameTextBox.Location = New System.Drawing.Point(262, 178)
+        Me.UsernameTextBox.Name = "UsernameTextBox"
+        Me.UsernameTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.UsernameTextBox.TabIndex = 9
         '
-        'TextBox4
+        'PasswordTextBox
         '
-        Me.TextBox4.Location = New System.Drawing.Point(262, 234)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox4.TabIndex = 10
+        Me.PasswordTextBox.Location = New System.Drawing.Point(262, 234)
+        Me.PasswordTextBox.Name = "PasswordTextBox"
+        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.PasswordTextBox.TabIndex = 10
         '
-        'TextBox5
+        'ConPassTextBox
         '
-        Me.TextBox5.Location = New System.Drawing.Point(262, 291)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox5.TabIndex = 11
+        Me.ConPassTextBox.Location = New System.Drawing.Point(262, 291)
+        Me.ConPassTextBox.Name = "ConPassTextBox"
+        Me.ConPassTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.ConPassTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.ConPassTextBox.TabIndex = 11
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
         '
         'FormMemReg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 543)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ConPassTextBox)
+        Me.Controls.Add(Me.PasswordTextBox)
+        Me.Controls.Add(Me.UsernameTextBox)
+        Me.Controls.Add(Me.Register_Button)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.ICTextBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(Me.Back_Button)
         Me.Name = "FormMemReg"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -160,15 +170,16 @@ Partial Class FormMemReg
     End Sub
 
     Friend WithEvents Back_Button As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents EmailTextBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ICTextBox As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Register_Button As Button
+    Friend WithEvents UsernameTextBox As TextBox
+    Friend WithEvents PasswordTextBox As TextBox
+    Friend WithEvents ConPassTextBox As TextBox
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

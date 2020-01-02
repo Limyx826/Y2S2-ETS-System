@@ -74,6 +74,7 @@ Partial Class Frontpage
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(315, 27)
         Me.DateTimePicker1.TabIndex = 2
+        Me.DateTimePicker1.Value = New Date(2020, 1, 3, 0, 0, 0, 0)
         '
         'ComboBox3Time
         '
@@ -112,7 +113,7 @@ Partial Class Frontpage
         Me.ComboBox1Origin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1Origin.FormattingEnabled = True
         Me.ComboBox1Origin.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
-        Me.ComboBox1Origin.Location = New System.Drawing.Point(236, 183)
+        Me.ComboBox1Origin.Location = New System.Drawing.Point(36, 183)
         Me.ComboBox1Origin.Name = "ComboBox1Origin"
         Me.ComboBox1Origin.Size = New System.Drawing.Size(181, 28)
         Me.ComboBox1Origin.TabIndex = 6
@@ -123,7 +124,7 @@ Partial Class Frontpage
         Me.ComboBox2Destination.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2Destination.FormattingEnabled = True
         Me.ComboBox2Destination.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
-        Me.ComboBox2Destination.Location = New System.Drawing.Point(36, 183)
+        Me.ComboBox2Destination.Location = New System.Drawing.Point(241, 183)
         Me.ComboBox2Destination.Name = "ComboBox2Destination"
         Me.ComboBox2Destination.Size = New System.Drawing.Size(180, 28)
         Me.ComboBox2Destination.TabIndex = 7
@@ -220,6 +221,7 @@ Partial Class Frontpage
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(316, 27)
         Me.DateTimePicker2.TabIndex = 15
+        Me.DateTimePicker2.Value = New Date(2020, 1, 3, 0, 0, 0, 0)
         '
         'PictureBox1
         '

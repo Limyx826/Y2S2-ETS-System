@@ -8,7 +8,8 @@
         CusInfoPanel = New Panel()
 
         With CusInfoPanel
-            .BackColor = Color.Wheat
+            '.BackColor = Color.Wheat
+            .Location = New Point(13, 8)
             .Size = New Size(500, 175)
             .Name = "PnlCusInfo" + (CusInfoPnlCount + 1).ToString
         End With
@@ -25,7 +26,7 @@
 
         With SeatLabel
             .Location = New Point(43, 19)
-            .Text = New String("Label")
+            .Text = New String("Label" + CusInfoPnlCount.ToString)
         End With
 
         For Each controlObject As Control In FlowLayoutPanel1.Controls
@@ -36,65 +37,65 @@
     End Sub
 
     Public Sub CreateNameLabel(ByVal panelname As String)
-        Dim SeatLabel As Label
-        SeatLabel = New Label
+        Dim NameLabel As Label
+        NameLabel = New Label
 
-        With SeatLabel
-            .Location = New Point(43, 19)
-            .Text = New String("Label")
+        With NameLabel
+            .Location = New Point(43, 53)
+            .Text = New String("Name:")
         End With
 
         For Each controlObject As Control In FlowLayoutPanel1.Controls
             If controlObject.Name = panelname Then
-                controlObject.Controls.Add(SeatLabel)
+                controlObject.Controls.Add(NameLabel)
             End If
         Next
     End Sub
 
     Public Sub CreateICLabel(ByVal panelname As String)
-        Dim SeatLabel As Label
-        SeatLabel = New Label
+        Dim ICLabel As Label
+        ICLabel = New Label
 
-        With SeatLabel
-            .Location = New Point(43, 19)
-            .Text = New String("Label")
+        With ICLabel
+            .Location = New Point(43, 126)
+            .Text = New String("IC:")
         End With
 
         For Each controlObject As Control In FlowLayoutPanel1.Controls
             If controlObject.Name = panelname Then
-                controlObject.Controls.Add(SeatLabel)
+                controlObject.Controls.Add(ICLabel)
             End If
         Next
     End Sub
 
     Public Sub CreateNameTB(ByVal panelname As String)
-        Dim SeatLabel As Label
-        SeatLabel = New Label
+        Dim NameTB As TextBox
+        NameTB = New TextBox
 
-        With SeatLabel
-            .Location = New Point(43, 53)
-            .Text = New String("Label")
+        With NameTB
+            .Location = New Point(157, 53)
+            .Size = New Size(328, 22)
         End With
 
         For Each controlObject As Control In FlowLayoutPanel1.Controls
             If controlObject.Name = panelname Then
-                controlObject.Controls.Add(SeatLabel)
+                controlObject.Controls.Add(NameTB)
             End If
         Next
     End Sub
 
     Public Sub CreateICTB(ByVal panelname As String)
-        Dim SeatLabel As Label
-        SeatLabel = New Label
+        Dim ICTB As TextBox
+        ICTB = New TextBox
 
-        With SeatLabel
-            .Location = New Point(43, 19)
-            .Text = New String("Label")
+        With ICTB
+            .Location = New Point(157, 126)
+            .Size = New Size(328, 22)
         End With
 
         For Each controlObject As Control In FlowLayoutPanel1.Controls
             If controlObject.Name = panelname Then
-                controlObject.Controls.Add(SeatLabel)
+                controlObject.Controls.Add(ICTB)
             End If
         Next
     End Sub
@@ -109,8 +110,23 @@
         Me.Close()
     End Sub
 
+    Private Sub FormCusInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        For x As Integer = 1 To 3
+            CreateCusInfo()
+            CreateSeatLabel(CurrentCusInfoPnlName)
+            CreateNameLabel(CurrentCusInfoPnlName)
+            CreateICLabel(CurrentCusInfoPnlName)
+            CreateNameTB(CurrentCusInfoPnlName)
+            CreateICTB(CurrentCusInfoPnlName)
+        Next
+    End Sub
+
     Private Sub Button_Add_Click(sender As Object, e As EventArgs) Handles Button_Add.Click
         CreateCusInfo()
         CreateSeatLabel(CurrentCusInfoPnlName)
+        CreateNameLabel(CurrentCusInfoPnlName)
+        CreateICLabel(CurrentCusInfoPnlName)
+        CreateNameTB(CurrentCusInfoPnlName)
+        CreateICTB(CurrentCusInfoPnlName)
     End Sub
 End Class

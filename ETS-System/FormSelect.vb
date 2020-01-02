@@ -1,6 +1,9 @@
 ﻿Imports System.Data.OleDb
 
 Public Class FormSelect
+    Dim ds As New OleDbDataAdapter
+    Dim con As New OleDbConnection
+    Dim dt As New DataTable
     Private Sub Back_button_Click(sender As Object, e As EventArgs) Handles Back_button.Click
         Frontpage.Show()
         Me.Close()
@@ -12,11 +15,18 @@ Public Class FormSelect
                 .Add(Frontpage.ComboBox1Origin.SelectedItem)
                 .Add(Frontpage.ComboBox2Destination.SelectedItem)
                 .Add(Frontpage.DateTimePicker1.Value.Date)
+                .Add(Frontpage.DateTimePicker2.Value.Date)
                 .Add(Frontpage.ComboBox3Time.SelectedItem)
                 .Add(Frontpage.ComboBox5Adult.SelectedItem)
                 .Add(Frontpage.ComboBox6Child.SelectedItem)
             End With
         End With
+
+        'con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=JCLO.accdb"
+        'con.Open()
+        'ds = New OleDbDataAdapter("select * from TABLE NAME", con)
+        'ds.Fill(dt)
+        'con.Close()
 
 
 

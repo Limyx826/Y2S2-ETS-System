@@ -63,8 +63,9 @@ Partial Class FormCusInfo
         Me.Panel1.Controls.Add(Me.SeatNumLabel)
         Me.Panel1.Location = New System.Drawing.Point(13, 8)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(695, 175)
+        Me.Panel1.Size = New System.Drawing.Size(675, 175)
         Me.Panel1.TabIndex = 2
+        Me.Panel1.Visible = False
         '
         'ICTextBox
         '
@@ -75,7 +76,7 @@ Partial Class FormCusInfo
         '
         'NameTextBox
         '
-        Me.NameTextBox.Location = New System.Drawing.Point(157, 50)
+        Me.NameTextBox.Location = New System.Drawing.Point(157, 53)
         Me.NameTextBox.Name = "NameTextBox"
         Me.NameTextBox.Size = New System.Drawing.Size(328, 22)
         Me.NameTextBox.TabIndex = 8
