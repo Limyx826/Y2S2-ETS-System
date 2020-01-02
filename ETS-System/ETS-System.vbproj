@@ -63,6 +63,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -176,6 +179,9 @@
     <EmbeddedResource Include="FormConfirm.resx">
       <DependentUpon>FormConfirm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCusInfo.resx">
+      <DependentUpon>FormCusInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDatabase.resx">
       <DependentUpon>FormDatabase.vb</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +225,7 @@
     <None Include="JCLODataSet.xss">
       <DependentUpon>JCLODataSet.xsd</DependentUpon>
     </None>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -234,6 +241,7 @@
     <Content Include="JCLO.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\ETS.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

@@ -6,8 +6,8 @@
         ElseIf ComboBox2Destination.Text = "Destination" Then
             MessageBox.Show("Invalid destination", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
 
-        ElseIf DateTimePicker1.Value.Date = Today.Date Then
-            MessageBox.Show("Invalid date", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+            'ElseIf DateTimePicker1.Value.Date = Today.Date Then
+            'MessageBox.Show("Invalid date", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
 
         ElseIf ComboBox3Time.Text = "Travel Time" Then
             MessageBox.Show("Invalid time", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
@@ -45,5 +45,24 @@
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         FormDatabase.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Frontpage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LinkLabel1.Visible = False
+        LabelReturn.Visible = False
+        DateTimePicker2.Visible = False
+        DateTimePicker2.Enabled = False
+    End Sub
+
+    Private Sub RBOneWay_CheckedChanged(sender As Object, e As EventArgs) Handles RBOneWay.CheckedChanged
+        LabelReturn.Visible = False
+        DateTimePicker2.Visible = False
+        DateTimePicker2.Enabled = False
+    End Sub
+
+    Private Sub RBReturn_CheckedChanged(sender As Object, e As EventArgs) Handles RBReturn.CheckedChanged
+        LabelReturn.Visible = True
+        DateTimePicker2.Visible = True
+        DateTimePicker2.Enabled = True
     End Sub
 End Class

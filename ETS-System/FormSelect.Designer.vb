@@ -122,6 +122,7 @@ Partial Class FormSelect
         Me.Controls.Add(Me.Back_button)
         Me.Controls.Add(Me.ListView1)
         Me.Name = "FormSelect"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormSelect"
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

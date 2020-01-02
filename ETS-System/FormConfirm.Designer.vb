@@ -23,38 +23,40 @@ Partial Class FormConfirm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Confirm_Button = New System.Windows.Forms.Button()
         Me.RBDebit = New System.Windows.Forms.RadioButton()
         Me.RBCredit = New System.Windows.Forms.RadioButton()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Return_Button = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Confirm_Button)
+        Me.GroupBox1.Controls.Add(Me.Return_Button)
         Me.GroupBox1.Controls.Add(Me.RBDebit)
         Me.GroupBox1.Controls.Add(Me.RBCredit)
-        Me.GroupBox1.Location = New System.Drawing.Point(187, 281)
+        Me.GroupBox1.Location = New System.Drawing.Point(38, 339)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(501, 140)
+        Me.GroupBox1.Size = New System.Drawing.Size(650, 181)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment"
         '
-        'Button1
+        'Confirm_Button
         '
-        Me.Button1.Location = New System.Drawing.Point(201, 96)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Confirm_Button.Location = New System.Drawing.Point(263, 92)
+        Me.Confirm_Button.Name = "Confirm_Button"
+        Me.Confirm_Button.Size = New System.Drawing.Size(75, 23)
+        Me.Confirm_Button.TabIndex = 2
+        Me.Confirm_Button.Text = "Pay"
+        Me.Confirm_Button.UseVisualStyleBackColor = True
         '
         'RBDebit
         '
         Me.RBDebit.AutoSize = True
-        Me.RBDebit.Location = New System.Drawing.Point(293, 57)
+        Me.RBDebit.Location = New System.Drawing.Point(276, 34)
         Me.RBDebit.Name = "RBDebit"
         Me.RBDebit.Size = New System.Drawing.Size(62, 21)
         Me.RBDebit.TabIndex = 1
@@ -65,7 +67,7 @@ Partial Class FormConfirm
         'RBCredit
         '
         Me.RBCredit.AutoSize = True
-        Me.RBCredit.Location = New System.Drawing.Point(24, 57)
+        Me.RBCredit.Location = New System.Drawing.Point(7, 34)
         Me.RBCredit.Name = "RBCredit"
         Me.RBCredit.Size = New System.Drawing.Size(66, 21)
         Me.RBCredit.TabIndex = 0
@@ -73,23 +75,33 @@ Partial Class FormConfirm
         Me.RBCredit.Text = "Credit"
         Me.RBCredit.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Return_Button
         '
-        Me.Button2.Location = New System.Drawing.Point(38, 449)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Return_Button.Location = New System.Drawing.Point(263, 142)
+        Me.Return_Button.Name = "Return_Button"
+        Me.Return_Button.Size = New System.Drawing.Size(75, 23)
+        Me.Return_Button.TabIndex = 1
+        Me.Return_Button.Text = "Return"
+        Me.Return_Button.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Location = New System.Drawing.Point(588, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(200, 263)
+        Me.GroupBox2.TabIndex = 2
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Journey Summary"
         '
         'FormConfirm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 504)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(800, 548)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "FormConfirm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormConfirm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -98,8 +110,9 @@ Partial Class FormConfirm
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Confirm_Button As Button
     Friend WithEvents RBDebit As RadioButton
     Friend WithEvents RBCredit As RadioButton
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Return_Button As Button
+    Friend WithEvents GroupBox2 As GroupBox
 End Class
