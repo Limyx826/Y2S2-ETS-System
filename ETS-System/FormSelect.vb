@@ -35,4 +35,8 @@ Public Class FormSelect
         End If
     End Sub
 
+    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+        FormSeat.Show()
+        Me.Close()
+    End Sub
 End Class
