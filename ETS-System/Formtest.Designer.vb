@@ -41,20 +41,19 @@ Partial Class Formtest
         Me.TimetableTableAdapter = New ETS_System.JCLODataSetTableAdapters.TimetableTableAdapter()
         Me.TableAdapterManager = New ETS_System.JCLODataSetTableAdapters.TableAdapterManager()
         Me.TimetableBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.TimetableBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.TimetableDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -71,11 +70,23 @@ Partial Class Formtest
         Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.NavigationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FrontpageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormSelectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormSeatToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormCusInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormConfirmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.FormLoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormMemRegToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormDatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TimetableBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TimetableBindingNavigator.SuspendLayout()
         CType(Me.TimetableDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ComboBox5
@@ -214,6 +225,7 @@ Partial Class Formtest
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.MemberTableAdapter = Nothing
         Me.TableAdapterManager.TicketTableAdapter = Nothing
         Me.TableAdapterManager.TimetableTableAdapter = Me.TimetableTableAdapter
         Me.TableAdapterManager.UpdateOrder = ETS_System.JCLODataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -226,7 +238,7 @@ Partial Class Formtest
         Me.TimetableBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
         Me.TimetableBindingNavigator.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.TimetableBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.TimetableBindingNavigatorSaveItem})
-        Me.TimetableBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.TimetableBindingNavigator.Location = New System.Drawing.Point(0, 28)
         Me.TimetableBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
         Me.TimetableBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
         Me.TimetableBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
@@ -237,13 +249,38 @@ Partial Class Formtest
         Me.TimetableBindingNavigator.TabIndex = 21
         Me.TimetableBindingNavigator.Text = "BindingNavigator1"
         '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        '
         'BindingNavigatorMoveFirstItem
         '
         Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 22)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
         'BindingNavigatorMovePreviousItem
@@ -252,34 +289,28 @@ Partial Class Formtest
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 22)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorPositionItem
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 20)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -301,40 +332,22 @@ Partial Class Formtest
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'TimetableBindingNavigatorSaveItem
         '
         Me.TimetableBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TimetableBindingNavigatorSaveItem.Image = CType(resources.GetObject("TimetableBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.TimetableBindingNavigatorSaveItem.Name = "TimetableBindingNavigatorSaveItem"
-        Me.TimetableBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.TimetableBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.TimetableBindingNavigatorSaveItem.Text = "Save Data"
         '
         'TimetableDataGridView
         '
         Me.TimetableDataGridView.AutoGenerateColumns = False
         Me.TimetableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.TimetableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17})
+        Me.TimetableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17})
         Me.TimetableDataGridView.DataSource = Me.TimetableBindingSource
         Me.TimetableDataGridView.Location = New System.Drawing.Point(58, 449)
         Me.TimetableDataGridView.Name = "TimetableDataGridView"
@@ -342,14 +355,6 @@ Partial Class Formtest
         Me.TimetableDataGridView.RowTemplate.Height = 24
         Me.TimetableDataGridView.Size = New System.Drawing.Size(679, 220)
         Me.TimetableDataGridView.TabIndex = 21
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.Width = 125
         '
         'DataGridViewTextBoxColumn2
         '
@@ -479,6 +484,76 @@ Partial Class Formtest
         Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
         Me.DataGridViewTextBoxColumn17.Width = 125
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NavigationToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.TabIndex = 22
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'NavigationToolStripMenuItem
+        '
+        Me.NavigationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FrontpageToolStripMenuItem, Me.FormSelectToolStripMenuItem, Me.FormSeatToolStripMenuItem, Me.FormCusInfoToolStripMenuItem, Me.FormConfirmToolStripMenuItem, Me.ToolStripSeparator1, Me.FormLoginToolStripMenuItem, Me.FormMemRegToolStripMenuItem, Me.FormDatabaseToolStripMenuItem})
+        Me.NavigationToolStripMenuItem.Name = "NavigationToolStripMenuItem"
+        Me.NavigationToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
+        Me.NavigationToolStripMenuItem.Text = "Navigation"
+        '
+        'FrontpageToolStripMenuItem
+        '
+        Me.FrontpageToolStripMenuItem.Name = "FrontpageToolStripMenuItem"
+        Me.FrontpageToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FrontpageToolStripMenuItem.Text = "Frontpage"
+        '
+        'FormSelectToolStripMenuItem
+        '
+        Me.FormSelectToolStripMenuItem.Name = "FormSelectToolStripMenuItem"
+        Me.FormSelectToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FormSelectToolStripMenuItem.Text = "FormSelect"
+        '
+        'FormSeatToolStripMenuItem
+        '
+        Me.FormSeatToolStripMenuItem.Name = "FormSeatToolStripMenuItem"
+        Me.FormSeatToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FormSeatToolStripMenuItem.Text = "FormSeat"
+        '
+        'FormCusInfoToolStripMenuItem
+        '
+        Me.FormCusInfoToolStripMenuItem.Name = "FormCusInfoToolStripMenuItem"
+        Me.FormCusInfoToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FormCusInfoToolStripMenuItem.Text = "FormCusInfo"
+        '
+        'FormConfirmToolStripMenuItem
+        '
+        Me.FormConfirmToolStripMenuItem.Name = "FormConfirmToolStripMenuItem"
+        Me.FormConfirmToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FormConfirmToolStripMenuItem.Text = "FormConfirm"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(221, 6)
+        '
+        'FormLoginToolStripMenuItem
+        '
+        Me.FormLoginToolStripMenuItem.Name = "FormLoginToolStripMenuItem"
+        Me.FormLoginToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FormLoginToolStripMenuItem.Text = "FormLogin"
+        '
+        'FormMemRegToolStripMenuItem
+        '
+        Me.FormMemRegToolStripMenuItem.Name = "FormMemRegToolStripMenuItem"
+        Me.FormMemRegToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FormMemRegToolStripMenuItem.Text = "FormMemReg"
+        '
+        'FormDatabaseToolStripMenuItem
+        '
+        Me.FormDatabaseToolStripMenuItem.Name = "FormDatabaseToolStripMenuItem"
+        Me.FormDatabaseToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FormDatabaseToolStripMenuItem.Text = "FormDatabase"
+        '
         'Formtest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -487,6 +562,7 @@ Partial Class Formtest
         Me.ClientSize = New System.Drawing.Size(800, 719)
         Me.Controls.Add(Me.TimetableDataGridView)
         Me.Controls.Add(Me.TimetableBindingNavigator)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.RadioButton4)
         Me.Controls.Add(Me.RadioButton3)
         Me.Controls.Add(Me.RadioButton2)
@@ -500,6 +576,7 @@ Partial Class Formtest
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Next_button)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Formtest"
         Me.Text = "Formtest"
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -508,6 +585,8 @@ Partial Class Formtest
         Me.TimetableBindingNavigator.ResumeLayout(False)
         Me.TimetableBindingNavigator.PerformLayout()
         CType(Me.TimetableDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -560,4 +639,15 @@ Partial Class Formtest
     Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents NavigationToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FrontpageToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormSelectToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormSeatToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormCusInfoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormConfirmToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents FormLoginToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormMemRegToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FormDatabaseToolStripMenuItem As ToolStripMenuItem
 End Class

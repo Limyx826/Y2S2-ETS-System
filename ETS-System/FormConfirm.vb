@@ -1,4 +1,8 @@
 ﻿Public Class FormConfirm
+    Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
     Private Sub Confirm_Button_Click(sender As Object, e As EventArgs) Handles Confirm_Button.Click
         Frontpage.Show()
         Me.Close()
