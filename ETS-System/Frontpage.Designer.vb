@@ -46,22 +46,22 @@ Partial Class Frontpage
         '
         'Next_button
         '
-        Me.Next_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Next_button.Location = New System.Drawing.Point(492, 311)
+        Me.Next_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Next_button.Location = New System.Drawing.Point(477, 314)
         Me.Next_button.Name = "Next_button"
-        Me.Next_button.Size = New System.Drawing.Size(102, 39)
+        Me.Next_button.Size = New System.Drawing.Size(93, 34)
         Me.Next_button.TabIndex = 0
         Me.Next_button.Text = "Search"
         Me.Next_button.UseVisualStyleBackColor = True
         '
         'ComboBox5Adult
         '
-        Me.ComboBox5Adult.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox5Adult.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox5Adult.FormattingEnabled = True
         Me.ComboBox5Adult.Items.AddRange(New Object() {"0 Adult", "1 Adult", "2 Adult", "3 Adult", "4 Adult", "5 Adult", "6 Adult"})
         Me.ComboBox5Adult.Location = New System.Drawing.Point(201, 319)
         Me.ComboBox5Adult.Name = "ComboBox5Adult"
-        Me.ComboBox5Adult.Size = New System.Drawing.Size(121, 28)
+        Me.ComboBox5Adult.Size = New System.Drawing.Size(121, 26)
         Me.ComboBox5Adult.TabIndex = 1
         Me.ComboBox5Adult.Text = "Adult"
         '
@@ -69,84 +69,85 @@ Partial Class Frontpage
         '
         Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Checked = False
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(36, 256)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(315, 27)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(315, 24)
         Me.DateTimePicker1.TabIndex = 2
         Me.DateTimePicker1.Value = New Date(2020, 1, 3, 0, 0, 0, 0)
         '
         'ComboBox3Time
         '
-        Me.ComboBox3Time.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox3Time.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3Time.FormattingEnabled = True
         Me.ComboBox3Time.Items.AddRange(New Object() {"12:00 AM - 06:59 AM", "07:00 AM - 11:59 AM", "12:00 PM - 06:59 PM", "07:00 PM - 11:59 PM"})
         Me.ComboBox3Time.Location = New System.Drawing.Point(438, 183)
         Me.ComboBox3Time.Name = "ComboBox3Time"
-        Me.ComboBox3Time.Size = New System.Drawing.Size(194, 28)
+        Me.ComboBox3Time.Size = New System.Drawing.Size(194, 26)
         Me.ComboBox3Time.TabIndex = 3
         Me.ComboBox3Time.Text = "Travel Time"
         '
         'ComboBox6Child
         '
-        Me.ComboBox6Child.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox6Child.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox6Child.FormattingEnabled = True
         Me.ComboBox6Child.Items.AddRange(New Object() {"0 Child", "1 Child", "2 Children", "3 Children", "4 Children", "5 Children", "6 Children"})
         Me.ComboBox6Child.Location = New System.Drawing.Point(328, 319)
         Me.ComboBox6Child.Name = "ComboBox6Child"
-        Me.ComboBox6Child.Size = New System.Drawing.Size(121, 28)
+        Me.ComboBox6Child.Size = New System.Drawing.Size(121, 26)
         Me.ComboBox6Child.TabIndex = 4
         Me.ComboBox6Child.Text = "Child"
         '
         'LabelTitle
         '
         Me.LabelTitle.AutoSize = True
-        Me.LabelTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTitle.Location = New System.Drawing.Point(249, 64)
+        Me.LabelTitle.BackColor = System.Drawing.Color.Transparent
+        Me.LabelTitle.Font = New System.Drawing.Font("Goudy Old Style", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTitle.Location = New System.Drawing.Point(217, 58)
         Me.LabelTitle.Name = "LabelTitle"
-        Me.LabelTitle.Size = New System.Drawing.Size(304, 36)
+        Me.LabelTitle.Size = New System.Drawing.Size(311, 39)
         Me.LabelTitle.TabIndex = 5
         Me.LabelTitle.Text = "Express Train System"
         '
         'ComboBox1Origin
         '
-        Me.ComboBox1Origin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1Origin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1Origin.FormattingEnabled = True
         Me.ComboBox1Origin.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
         Me.ComboBox1Origin.Location = New System.Drawing.Point(36, 183)
         Me.ComboBox1Origin.Name = "ComboBox1Origin"
-        Me.ComboBox1Origin.Size = New System.Drawing.Size(181, 28)
+        Me.ComboBox1Origin.Size = New System.Drawing.Size(181, 26)
         Me.ComboBox1Origin.TabIndex = 6
         Me.ComboBox1Origin.Text = "Origin"
         '
         'ComboBox2Destination
         '
-        Me.ComboBox2Destination.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2Destination.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2Destination.FormattingEnabled = True
         Me.ComboBox2Destination.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
         Me.ComboBox2Destination.Location = New System.Drawing.Point(241, 183)
         Me.ComboBox2Destination.Name = "ComboBox2Destination"
-        Me.ComboBox2Destination.Size = New System.Drawing.Size(180, 28)
+        Me.ComboBox2Destination.Size = New System.Drawing.Size(180, 26)
         Me.ComboBox2Destination.TabIndex = 7
         Me.ComboBox2Destination.Text = "Destination"
         '
         'ComboBox4Class
         '
-        Me.ComboBox4Class.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4Class.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox4Class.FormattingEnabled = True
         Me.ComboBox4Class.Items.AddRange(New Object() {"Standard Class", "Business Class"})
         Me.ComboBox4Class.Location = New System.Drawing.Point(36, 319)
         Me.ComboBox4Class.Name = "ComboBox4Class"
-        Me.ComboBox4Class.Size = New System.Drawing.Size(159, 28)
+        Me.ComboBox4Class.Size = New System.Drawing.Size(159, 26)
         Me.ComboBox4Class.TabIndex = 8
         Me.ComboBox4Class.Text = "Class"
         '
         'Login_Button
         '
-        Me.Login_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Login_Button.Location = New System.Drawing.Point(627, 12)
+        Me.Login_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Login_Button.Location = New System.Drawing.Point(639, 12)
         Me.Login_Button.Name = "Login_Button"
-        Me.Login_Button.Size = New System.Drawing.Size(93, 47)
+        Me.Login_Button.Size = New System.Drawing.Size(81, 36)
         Me.Login_Button.TabIndex = 9
         Me.Login_Button.Text = "Login"
         Me.Login_Button.UseVisualStyleBackColor = True
@@ -163,11 +164,12 @@ Partial Class Frontpage
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.RBReturn)
         Me.GroupBox1.Controls.Add(Me.RBOneWay)
-        Me.GroupBox1.Location = New System.Drawing.Point(36, 103)
+        Me.GroupBox1.Location = New System.Drawing.Point(36, 113)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(264, 58)
+        Me.GroupBox1.Size = New System.Drawing.Size(254, 48)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         '
@@ -197,34 +199,37 @@ Partial Class Frontpage
         'LabelDepature
         '
         Me.LabelDepature.AutoSize = True
-        Me.LabelDepature.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelDepature.BackColor = System.Drawing.Color.Transparent
+        Me.LabelDepature.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelDepature.Location = New System.Drawing.Point(34, 233)
         Me.LabelDepature.Name = "LabelDepature"
-        Me.LabelDepature.Size = New System.Drawing.Size(119, 20)
+        Me.LabelDepature.Size = New System.Drawing.Size(103, 18)
         Me.LabelDepature.TabIndex = 13
         Me.LabelDepature.Text = "Depature Date"
         '
         'LabelReturn
         '
         Me.LabelReturn.AutoSize = True
-        Me.LabelReturn.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelReturn.BackColor = System.Drawing.Color.Transparent
+        Me.LabelReturn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelReturn.Location = New System.Drawing.Point(388, 233)
         Me.LabelReturn.Name = "LabelReturn"
-        Me.LabelReturn.Size = New System.Drawing.Size(100, 20)
+        Me.LabelReturn.Size = New System.Drawing.Size(87, 18)
         Me.LabelReturn.TabIndex = 14
         Me.LabelReturn.Text = "Return Date"
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Location = New System.Drawing.Point(392, 256)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(316, 27)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(316, 24)
         Me.DateTimePicker2.TabIndex = 15
         Me.DateTimePicker2.Value = New Date(2020, 1, 3, 0, 0, 0, 0)
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.ETS_System.My.Resources.Resources.ETS
         Me.PictureBox1.Location = New System.Drawing.Point(1, -1)
         Me.PictureBox1.Name = "PictureBox1"
@@ -238,6 +243,8 @@ Partial Class Frontpage
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
+        Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(732, 384)
         Me.Controls.Add(Me.DateTimePicker2)
         Me.Controls.Add(Me.LabelReturn)
@@ -255,6 +262,7 @@ Partial Class Frontpage
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.ComboBox5Adult)
         Me.Controls.Add(Me.Next_button)
+        Me.DoubleBuffered = True
         Me.Name = "Frontpage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Express Train System"

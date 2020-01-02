@@ -61,6 +61,8 @@ Partial Class FormSeat
         Me.NextButton = New System.Windows.Forms.Button()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.TestButton = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'B1A
@@ -176,7 +178,7 @@ Partial Class FormSeat
         Me.B1B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B1B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B1B.ForeColor = System.Drawing.Color.White
-        Me.B1B.Location = New System.Drawing.Point(296, 89)
+        Me.B1B.Location = New System.Drawing.Point(273, 89)
         Me.B1B.Name = "B1B"
         Me.B1B.Size = New System.Drawing.Size(42, 30)
         Me.B1B.TabIndex = 17
@@ -188,7 +190,7 @@ Partial Class FormSeat
         Me.B2B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B2B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B2B.ForeColor = System.Drawing.Color.White
-        Me.B2B.Location = New System.Drawing.Point(296, 141)
+        Me.B2B.Location = New System.Drawing.Point(273, 141)
         Me.B2B.Name = "B2B"
         Me.B2B.Size = New System.Drawing.Size(42, 30)
         Me.B2B.TabIndex = 16
@@ -200,7 +202,7 @@ Partial Class FormSeat
         Me.B3B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B3B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B3B.ForeColor = System.Drawing.Color.White
-        Me.B3B.Location = New System.Drawing.Point(296, 193)
+        Me.B3B.Location = New System.Drawing.Point(273, 193)
         Me.B3B.Name = "B3B"
         Me.B3B.Size = New System.Drawing.Size(42, 30)
         Me.B3B.TabIndex = 15
@@ -212,7 +214,7 @@ Partial Class FormSeat
         Me.B4B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B4B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B4B.ForeColor = System.Drawing.Color.White
-        Me.B4B.Location = New System.Drawing.Point(296, 245)
+        Me.B4B.Location = New System.Drawing.Point(273, 245)
         Me.B4B.Name = "B4B"
         Me.B4B.Size = New System.Drawing.Size(42, 30)
         Me.B4B.TabIndex = 14
@@ -224,7 +226,7 @@ Partial Class FormSeat
         Me.B5B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B5B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B5B.ForeColor = System.Drawing.Color.White
-        Me.B5B.Location = New System.Drawing.Point(296, 297)
+        Me.B5B.Location = New System.Drawing.Point(273, 297)
         Me.B5B.Name = "B5B"
         Me.B5B.Size = New System.Drawing.Size(42, 30)
         Me.B5B.TabIndex = 13
@@ -236,7 +238,7 @@ Partial Class FormSeat
         Me.B6B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B6B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B6B.ForeColor = System.Drawing.Color.White
-        Me.B6B.Location = New System.Drawing.Point(296, 349)
+        Me.B6B.Location = New System.Drawing.Point(273, 349)
         Me.B6B.Name = "B6B"
         Me.B6B.Size = New System.Drawing.Size(42, 30)
         Me.B6B.TabIndex = 12
@@ -248,7 +250,7 @@ Partial Class FormSeat
         Me.B7B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B7B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B7B.ForeColor = System.Drawing.Color.White
-        Me.B7B.Location = New System.Drawing.Point(296, 401)
+        Me.B7B.Location = New System.Drawing.Point(273, 401)
         Me.B7B.Name = "B7B"
         Me.B7B.Size = New System.Drawing.Size(42, 30)
         Me.B7B.TabIndex = 11
@@ -260,7 +262,7 @@ Partial Class FormSeat
         Me.B8B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B8B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B8B.ForeColor = System.Drawing.Color.White
-        Me.B8B.Location = New System.Drawing.Point(296, 453)
+        Me.B8B.Location = New System.Drawing.Point(273, 453)
         Me.B8B.Name = "B8B"
         Me.B8B.Size = New System.Drawing.Size(42, 30)
         Me.B8B.TabIndex = 10
@@ -272,7 +274,7 @@ Partial Class FormSeat
         Me.B9B.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B9B.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B9B.ForeColor = System.Drawing.Color.White
-        Me.B9B.Location = New System.Drawing.Point(296, 505)
+        Me.B9B.Location = New System.Drawing.Point(273, 505)
         Me.B9B.Name = "B9B"
         Me.B9B.Size = New System.Drawing.Size(42, 30)
         Me.B9B.TabIndex = 9
@@ -284,7 +286,7 @@ Partial Class FormSeat
         Me.B1C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B1C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B1C.ForeColor = System.Drawing.Color.White
-        Me.B1C.Location = New System.Drawing.Point(445, 89)
+        Me.B1C.Location = New System.Drawing.Point(398, 89)
         Me.B1C.Name = "B1C"
         Me.B1C.Size = New System.Drawing.Size(42, 30)
         Me.B1C.TabIndex = 35
@@ -296,7 +298,7 @@ Partial Class FormSeat
         Me.B2C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B2C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B2C.ForeColor = System.Drawing.Color.White
-        Me.B2C.Location = New System.Drawing.Point(445, 141)
+        Me.B2C.Location = New System.Drawing.Point(398, 141)
         Me.B2C.Name = "B2C"
         Me.B2C.Size = New System.Drawing.Size(42, 30)
         Me.B2C.TabIndex = 34
@@ -308,7 +310,7 @@ Partial Class FormSeat
         Me.B3C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B3C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B3C.ForeColor = System.Drawing.Color.White
-        Me.B3C.Location = New System.Drawing.Point(445, 193)
+        Me.B3C.Location = New System.Drawing.Point(398, 193)
         Me.B3C.Name = "B3C"
         Me.B3C.Size = New System.Drawing.Size(42, 30)
         Me.B3C.TabIndex = 33
@@ -320,7 +322,7 @@ Partial Class FormSeat
         Me.B4C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B4C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B4C.ForeColor = System.Drawing.Color.White
-        Me.B4C.Location = New System.Drawing.Point(445, 245)
+        Me.B4C.Location = New System.Drawing.Point(398, 245)
         Me.B4C.Name = "B4C"
         Me.B4C.Size = New System.Drawing.Size(42, 30)
         Me.B4C.TabIndex = 32
@@ -332,7 +334,7 @@ Partial Class FormSeat
         Me.B5C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B5C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B5C.ForeColor = System.Drawing.Color.White
-        Me.B5C.Location = New System.Drawing.Point(445, 297)
+        Me.B5C.Location = New System.Drawing.Point(398, 297)
         Me.B5C.Name = "B5C"
         Me.B5C.Size = New System.Drawing.Size(42, 30)
         Me.B5C.TabIndex = 31
@@ -344,7 +346,7 @@ Partial Class FormSeat
         Me.B6C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B6C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B6C.ForeColor = System.Drawing.Color.White
-        Me.B6C.Location = New System.Drawing.Point(445, 349)
+        Me.B6C.Location = New System.Drawing.Point(398, 349)
         Me.B6C.Name = "B6C"
         Me.B6C.Size = New System.Drawing.Size(42, 30)
         Me.B6C.TabIndex = 30
@@ -356,7 +358,7 @@ Partial Class FormSeat
         Me.B7C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B7C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B7C.ForeColor = System.Drawing.Color.White
-        Me.B7C.Location = New System.Drawing.Point(445, 401)
+        Me.B7C.Location = New System.Drawing.Point(398, 401)
         Me.B7C.Name = "B7C"
         Me.B7C.Size = New System.Drawing.Size(42, 30)
         Me.B7C.TabIndex = 29
@@ -368,7 +370,7 @@ Partial Class FormSeat
         Me.B8C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B8C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B8C.ForeColor = System.Drawing.Color.White
-        Me.B8C.Location = New System.Drawing.Point(445, 453)
+        Me.B8C.Location = New System.Drawing.Point(398, 453)
         Me.B8C.Name = "B8C"
         Me.B8C.Size = New System.Drawing.Size(42, 30)
         Me.B8C.TabIndex = 28
@@ -380,7 +382,7 @@ Partial Class FormSeat
         Me.B9C.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B9C.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B9C.ForeColor = System.Drawing.Color.White
-        Me.B9C.Location = New System.Drawing.Point(445, 505)
+        Me.B9C.Location = New System.Drawing.Point(398, 505)
         Me.B9C.Name = "B9C"
         Me.B9C.Size = New System.Drawing.Size(42, 30)
         Me.B9C.TabIndex = 27
@@ -392,7 +394,7 @@ Partial Class FormSeat
         Me.B1D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B1D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B1D.ForeColor = System.Drawing.Color.White
-        Me.B1D.Location = New System.Drawing.Point(538, 89)
+        Me.B1D.Location = New System.Drawing.Point(470, 89)
         Me.B1D.Name = "B1D"
         Me.B1D.Size = New System.Drawing.Size(42, 30)
         Me.B1D.TabIndex = 26
@@ -404,7 +406,7 @@ Partial Class FormSeat
         Me.B2D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B2D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B2D.ForeColor = System.Drawing.Color.White
-        Me.B2D.Location = New System.Drawing.Point(538, 141)
+        Me.B2D.Location = New System.Drawing.Point(470, 141)
         Me.B2D.Name = "B2D"
         Me.B2D.Size = New System.Drawing.Size(42, 30)
         Me.B2D.TabIndex = 25
@@ -416,7 +418,7 @@ Partial Class FormSeat
         Me.B3D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B3D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B3D.ForeColor = System.Drawing.Color.White
-        Me.B3D.Location = New System.Drawing.Point(538, 193)
+        Me.B3D.Location = New System.Drawing.Point(470, 193)
         Me.B3D.Name = "B3D"
         Me.B3D.Size = New System.Drawing.Size(42, 30)
         Me.B3D.TabIndex = 24
@@ -428,7 +430,7 @@ Partial Class FormSeat
         Me.B4D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B4D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B4D.ForeColor = System.Drawing.Color.White
-        Me.B4D.Location = New System.Drawing.Point(538, 245)
+        Me.B4D.Location = New System.Drawing.Point(470, 245)
         Me.B4D.Name = "B4D"
         Me.B4D.Size = New System.Drawing.Size(42, 30)
         Me.B4D.TabIndex = 23
@@ -440,7 +442,7 @@ Partial Class FormSeat
         Me.B5D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B5D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B5D.ForeColor = System.Drawing.Color.White
-        Me.B5D.Location = New System.Drawing.Point(538, 297)
+        Me.B5D.Location = New System.Drawing.Point(470, 297)
         Me.B5D.Name = "B5D"
         Me.B5D.Size = New System.Drawing.Size(42, 30)
         Me.B5D.TabIndex = 22
@@ -452,7 +454,7 @@ Partial Class FormSeat
         Me.B6D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B6D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B6D.ForeColor = System.Drawing.Color.White
-        Me.B6D.Location = New System.Drawing.Point(538, 349)
+        Me.B6D.Location = New System.Drawing.Point(470, 349)
         Me.B6D.Name = "B6D"
         Me.B6D.Size = New System.Drawing.Size(42, 30)
         Me.B6D.TabIndex = 21
@@ -464,7 +466,7 @@ Partial Class FormSeat
         Me.B7D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B7D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B7D.ForeColor = System.Drawing.Color.White
-        Me.B7D.Location = New System.Drawing.Point(538, 401)
+        Me.B7D.Location = New System.Drawing.Point(470, 401)
         Me.B7D.Name = "B7D"
         Me.B7D.Size = New System.Drawing.Size(42, 30)
         Me.B7D.TabIndex = 20
@@ -476,7 +478,7 @@ Partial Class FormSeat
         Me.B8D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B8D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B8D.ForeColor = System.Drawing.Color.White
-        Me.B8D.Location = New System.Drawing.Point(538, 453)
+        Me.B8D.Location = New System.Drawing.Point(470, 453)
         Me.B8D.Name = "B8D"
         Me.B8D.Size = New System.Drawing.Size(42, 30)
         Me.B8D.TabIndex = 19
@@ -488,7 +490,7 @@ Partial Class FormSeat
         Me.B9D.BackColor = System.Drawing.Color.CornflowerBlue
         Me.B9D.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.B9D.ForeColor = System.Drawing.Color.White
-        Me.B9D.Location = New System.Drawing.Point(538, 505)
+        Me.B9D.Location = New System.Drawing.Point(470, 505)
         Me.B9D.Name = "B9D"
         Me.B9D.Size = New System.Drawing.Size(42, 30)
         Me.B9D.TabIndex = 18
@@ -497,36 +499,52 @@ Partial Class FormSeat
         '
         'NextButton
         '
-        Me.NextButton.Location = New System.Drawing.Point(674, 580)
+        Me.NextButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NextButton.Location = New System.Drawing.Point(582, 580)
         Me.NextButton.Name = "NextButton"
-        Me.NextButton.Size = New System.Drawing.Size(75, 23)
+        Me.NextButton.Size = New System.Drawing.Size(75, 32)
         Me.NextButton.TabIndex = 36
         Me.NextButton.Text = "Next"
         Me.NextButton.UseVisualStyleBackColor = True
         '
         'BackButton
         '
+        Me.BackButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BackButton.Location = New System.Drawing.Point(57, 580)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(75, 23)
+        Me.BackButton.Size = New System.Drawing.Size(75, 32)
         Me.BackButton.TabIndex = 37
         Me.BackButton.Text = "Back"
         Me.BackButton.UseVisualStyleBackColor = True
         '
         'TestButton
         '
-        Me.TestButton.Location = New System.Drawing.Point(57, 36)
+        Me.TestButton.Location = New System.Drawing.Point(23, 37)
         Me.TestButton.Name = "TestButton"
         Me.TestButton.Size = New System.Drawing.Size(75, 23)
         Me.TestButton.TabIndex = 38
         Me.TestButton.Text = "Test"
         Me.TestButton.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.ETS_System.My.Resources.Resources.ETS_w_
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(80, 31)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 39
+        Me.PictureBox1.TabStop = False
+        '
         'FormSeat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 636)
+        Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._21
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(684, 636)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TestButton)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.NextButton)
@@ -566,8 +584,11 @@ Partial Class FormSeat
         Me.Controls.Add(Me.B3A)
         Me.Controls.Add(Me.B2A)
         Me.Controls.Add(Me.B1A)
+        Me.DoubleBuffered = True
         Me.Name = "FormSeat"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormSeat"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -611,4 +632,5 @@ Partial Class FormSeat
     Friend WithEvents NextButton As Button
     Friend WithEvents BackButton As Button
     Friend WithEvents TestButton As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

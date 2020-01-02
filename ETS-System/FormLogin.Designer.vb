@@ -86,7 +86,7 @@ Partial Class FormLogin
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(197, 161)
+        Me.OK.Location = New System.Drawing.Point(197, 163)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 23)
         Me.OK.TabIndex = 4
@@ -95,7 +95,7 @@ Partial Class FormLogin
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(300, 161)
+        Me.Cancel.Location = New System.Drawing.Point(300, 163)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(94, 23)
         Me.Cancel.TabIndex = 5
@@ -104,7 +104,7 @@ Partial Class FormLogin
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(88, 113)
+        Me.LinkLabel1.Location = New System.Drawing.Point(84, 114)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(144, 17)
         Me.LinkLabel1.TabIndex = 6
@@ -113,6 +113,7 @@ Partial Class FormLogin
         '
         'LogoPictureBox
         '
+        Me.LogoPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
         Me.LogoPictureBox.Name = "LogoPictureBox"
@@ -123,7 +124,7 @@ Partial Class FormLogin
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(306, 9)
+        Me.LinkLabel2.Location = New System.Drawing.Point(307, 3)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(86, 17)
         Me.LinkLabel2.TabIndex = 7
@@ -132,6 +133,7 @@ Partial Class FormLogin
         '
         'CustomerPanel
         '
+        Me.CustomerPanel.BackColor = System.Drawing.Color.Transparent
         Me.CustomerPanel.Controls.Add(Me.UsernameLabel)
         Me.CustomerPanel.Controls.Add(Me.PasswordLabel)
         Me.CustomerPanel.Controls.Add(Me.LinkLabel1)
@@ -193,6 +195,8 @@ Partial Class FormLogin
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(401, 192)
         Me.Controls.Add(Me.CustomerPanel)
@@ -201,6 +205,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.LogoPictureBox)
         Me.Controls.Add(Me.StaffPanel)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False

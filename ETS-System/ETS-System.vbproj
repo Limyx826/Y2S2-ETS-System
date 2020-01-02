@@ -250,6 +250,13 @@
     <Content Include="JCLO.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\21.jpg" />
+    <None Include="Resources\ETS%28w%29.png" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\light-color-background-images-for-website-top-hd-images-for-free-background-for-website-in-light-color-1-1024x640.jpg" />
+    <None Include="Resources\master.jpg" />
+    <None Include="Resources\visa.jpg" />
+    <None Include="Resources\25461_hd-images-for-website-background.png" />
     <None Include="Resources\ETS.png" />
   </ItemGroup>
   <ItemGroup>

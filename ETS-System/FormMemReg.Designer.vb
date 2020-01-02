@@ -36,107 +36,126 @@ Partial Class FormMemReg
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.ConPassTextBox = New System.Windows.Forms.TextBox()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Back_Button
         '
-        Me.Back_Button.Location = New System.Drawing.Point(45, 490)
+        Me.Back_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Back_Button.Location = New System.Drawing.Point(50, 374)
         Me.Back_Button.Name = "Back_Button"
-        Me.Back_Button.Size = New System.Drawing.Size(75, 23)
+        Me.Back_Button.Size = New System.Drawing.Size(75, 32)
         Me.Back_Button.TabIndex = 0
         Me.Back_Button.Text = "Back"
         Me.Back_Button.UseVisualStyleBackColor = True
         '
         'EmailTextBox
         '
-        Me.EmailTextBox.Location = New System.Drawing.Point(262, 60)
+        Me.EmailTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EmailTextBox.Location = New System.Drawing.Point(264, 73)
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.EmailTextBox.Size = New System.Drawing.Size(398, 27)
         Me.EmailTextBox.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(92, 63)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(76, 80)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 17)
+        Me.Label1.Size = New System.Drawing.Size(57, 20)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Email*"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(92, 122)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(76, 136)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(147, 17)
+        Me.Label2.Size = New System.Drawing.Size(177, 20)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "IC / Passport Number*"
         '
         'ICTextBox
         '
-        Me.ICTextBox.Location = New System.Drawing.Point(262, 116)
+        Me.ICTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ICTextBox.Location = New System.Drawing.Point(264, 129)
         Me.ICTextBox.Name = "ICTextBox"
-        Me.ICTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.ICTextBox.Size = New System.Drawing.Size(398, 27)
         Me.ICTextBox.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(92, 183)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(76, 198)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 17)
+        Me.Label3.Size = New System.Drawing.Size(92, 20)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Username*"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(92, 239)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(76, 254)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(74, 17)
+        Me.Label4.Size = New System.Drawing.Size(89, 20)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Password*"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(92, 294)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(76, 311)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(126, 17)
+        Me.Label5.Size = New System.Drawing.Size(153, 20)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Confirm Password*"
         '
         'Register_Button
         '
         Me.Register_Button.Enabled = False
-        Me.Register_Button.Location = New System.Drawing.Point(662, 490)
+        Me.Register_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Register_Button.Location = New System.Drawing.Point(666, 374)
         Me.Register_Button.Name = "Register_Button"
-        Me.Register_Button.Size = New System.Drawing.Size(75, 23)
+        Me.Register_Button.Size = New System.Drawing.Size(91, 32)
         Me.Register_Button.TabIndex = 8
         Me.Register_Button.Text = "Register"
         Me.Register_Button.UseVisualStyleBackColor = True
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(262, 178)
+        Me.UsernameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UsernameTextBox.Location = New System.Drawing.Point(264, 191)
         Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.UsernameTextBox.Size = New System.Drawing.Size(398, 27)
         Me.UsernameTextBox.TabIndex = 9
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(262, 234)
+        Me.PasswordTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordTextBox.Location = New System.Drawing.Point(264, 247)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(398, 27)
         Me.PasswordTextBox.TabIndex = 10
         '
         'ConPassTextBox
         '
-        Me.ConPassTextBox.Location = New System.Drawing.Point(262, 291)
+        Me.ConPassTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConPassTextBox.Location = New System.Drawing.Point(264, 304)
         Me.ConPassTextBox.Name = "ConPassTextBox"
         Me.ConPassTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.ConPassTextBox.Size = New System.Drawing.Size(398, 22)
+        Me.ConPassTextBox.Size = New System.Drawing.Size(398, 27)
         Me.ConPassTextBox.TabIndex = 11
         '
         'NotifyIcon1
@@ -144,11 +163,24 @@ Partial Class FormMemReg
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ETS_System.My.Resources.Resources.ETS
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(80, 31)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
         'FormMemReg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 543)
+        Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(800, 418)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ConPassTextBox)
         Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.UsernameTextBox)
@@ -161,9 +193,12 @@ Partial Class FormMemReg
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(Me.Back_Button)
+        Me.DoubleBuffered = True
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "FormMemReg"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormMemReg"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -182,4 +217,5 @@ Partial Class FormMemReg
     Friend WithEvents PasswordTextBox As TextBox
     Friend WithEvents ConPassTextBox As TextBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

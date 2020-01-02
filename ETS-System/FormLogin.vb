@@ -29,6 +29,7 @@ Public Class FormLogin
     End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        StaffPanel.BackColor = Color.FromArgb(25, Color.Transparent)
         If StaffPanel.Visible = False Then
             With StaffPanel
                 .Visible = True
@@ -48,5 +49,9 @@ Public Class FormLogin
                 .Enabled = True
             End With
         End If
+    End Sub
+
+    Private Sub FormLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
