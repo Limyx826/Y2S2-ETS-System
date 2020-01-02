@@ -59,7 +59,7 @@ Partial Class Frontpage
         Me.ComboBox5Adult.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox5Adult.FormattingEnabled = True
         Me.ComboBox5Adult.Items.AddRange(New Object() {"0 Adult", "1 Adult", "2 Adult", "3 Adult", "4 Adult", "5 Adult", "6 Adult"})
-        Me.ComboBox5Adult.Location = New System.Drawing.Point(191, 319)
+        Me.ComboBox5Adult.Location = New System.Drawing.Point(201, 319)
         Me.ComboBox5Adult.Name = "ComboBox5Adult"
         Me.ComboBox5Adult.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox5Adult.TabIndex = 1
@@ -80,7 +80,7 @@ Partial Class Frontpage
         Me.ComboBox3Time.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3Time.FormattingEnabled = True
         Me.ComboBox3Time.Items.AddRange(New Object() {"12:00 AM - 06:59 AM", "07:00 AM - 11:59 AM", "12:00 PM - 06:59 PM", "07:00 PM - 11:59 PM"})
-        Me.ComboBox3Time.Location = New System.Drawing.Point(339, 183)
+        Me.ComboBox3Time.Location = New System.Drawing.Point(438, 183)
         Me.ComboBox3Time.Name = "ComboBox3Time"
         Me.ComboBox3Time.Size = New System.Drawing.Size(194, 28)
         Me.ComboBox3Time.TabIndex = 3
@@ -91,7 +91,7 @@ Partial Class Frontpage
         Me.ComboBox6Child.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox6Child.FormattingEnabled = True
         Me.ComboBox6Child.Items.AddRange(New Object() {"0 Child", "1 Child", "2 Children", "3 Children", "4 Children", "5 Children", "6 Children"})
-        Me.ComboBox6Child.Location = New System.Drawing.Point(318, 319)
+        Me.ComboBox6Child.Location = New System.Drawing.Point(328, 319)
         Me.ComboBox6Child.Name = "ComboBox6Child"
         Me.ComboBox6Child.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox6Child.TabIndex = 4
@@ -112,9 +112,9 @@ Partial Class Frontpage
         Me.ComboBox1Origin.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1Origin.FormattingEnabled = True
         Me.ComboBox1Origin.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
-        Me.ComboBox1Origin.Location = New System.Drawing.Point(37, 183)
+        Me.ComboBox1Origin.Location = New System.Drawing.Point(236, 183)
         Me.ComboBox1Origin.Name = "ComboBox1Origin"
-        Me.ComboBox1Origin.Size = New System.Drawing.Size(137, 28)
+        Me.ComboBox1Origin.Size = New System.Drawing.Size(181, 28)
         Me.ComboBox1Origin.TabIndex = 6
         Me.ComboBox1Origin.Text = "Origin"
         '
@@ -123,9 +123,9 @@ Partial Class Frontpage
         Me.ComboBox2Destination.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2Destination.FormattingEnabled = True
         Me.ComboBox2Destination.Items.AddRange(New Object() {"Padang Besar", "Arau", "Anak Bukit", "Alor Star", "Gurun", "Sungai Petani", "Butterworth", "Bukit Mertajam", "Taiping", "Kuala Kangsar", "Ipoh", "Batu Gajah", "Kampar", "Tanjung Malim", "Kuala Lumpur", "KL Sentral"})
-        Me.ComboBox2Destination.Location = New System.Drawing.Point(190, 183)
+        Me.ComboBox2Destination.Location = New System.Drawing.Point(36, 183)
         Me.ComboBox2Destination.Name = "ComboBox2Destination"
-        Me.ComboBox2Destination.Size = New System.Drawing.Size(131, 28)
+        Me.ComboBox2Destination.Size = New System.Drawing.Size(180, 28)
         Me.ComboBox2Destination.TabIndex = 7
         Me.ComboBox2Destination.Text = "Destination"
         '
@@ -136,14 +136,14 @@ Partial Class Frontpage
         Me.ComboBox4Class.Items.AddRange(New Object() {"Standard Class", "Business Class"})
         Me.ComboBox4Class.Location = New System.Drawing.Point(36, 319)
         Me.ComboBox4Class.Name = "ComboBox4Class"
-        Me.ComboBox4Class.Size = New System.Drawing.Size(148, 28)
+        Me.ComboBox4Class.Size = New System.Drawing.Size(159, 28)
         Me.ComboBox4Class.TabIndex = 8
         Me.ComboBox4Class.Text = "Class"
         '
         'Login_Button
         '
         Me.Login_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Login_Button.Location = New System.Drawing.Point(639, 12)
+        Me.Login_Button.Location = New System.Drawing.Point(627, 12)
         Me.Login_Button.Name = "Login_Button"
         Me.Login_Button.Size = New System.Drawing.Size(93, 47)
         Me.Login_Button.TabIndex = 9
@@ -236,7 +236,7 @@ Partial Class Frontpage
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(747, 384)
+        Me.ClientSize = New System.Drawing.Size(732, 384)
         Me.Controls.Add(Me.DateTimePicker2)
         Me.Controls.Add(Me.LabelReturn)
         Me.Controls.Add(Me.LabelDepature)
