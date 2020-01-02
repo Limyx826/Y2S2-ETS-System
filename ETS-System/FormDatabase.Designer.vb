@@ -24,227 +24,79 @@ Partial Class FormDatabase
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormDatabase))
-        Me.TimetableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JCLODataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JCLODataSet = New ETS_System.JCLODataSet()
-        Me.TimetableTableAdapter = New ETS_System.JCLODataSetTableAdapters.TimetableTableAdapter()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.KLSentralDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KualaLumpurDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TanjungMalimDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KamparDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BatuGajahDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IpohDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KualaKangsarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TaipingDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BukitMertajamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ButterworthDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SungaiPetaniDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GurunDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AlorStarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AnakBukitDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ArauDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PadangBesarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.JCLODataSet = New ETS_System.JCLODataSet()
+        Me.TimetableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TimetableTableAdapter = New ETS_System.JCLODataSetTableAdapters.TimetableTableAdapter()
+        Me.TableAdapterManager = New ETS_System.JCLODataSetTableAdapters.TableAdapterManager()
         Me.TimetableBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.TimetableBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.TableAdapterManager = New ETS_System.JCLODataSetTableAdapters.TableAdapterManager()
-        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.JCLODataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TimetableDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TimetableBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TimetableBindingNavigator.SuspendLayout()
+        CType(Me.TimetableDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TimetableBindingSource
-        '
-        Me.TimetableBindingSource.DataMember = "Timetable"
-        Me.TimetableBindingSource.DataSource = Me.JCLODataSetBindingSource
-        '
-        'JCLODataSetBindingSource
-        '
-        Me.JCLODataSetBindingSource.DataSource = Me.JCLODataSet
-        Me.JCLODataSetBindingSource.Position = 0
-        '
-        'JCLODataSet
-        '
-        Me.JCLODataSet.DataSetName = "JCLODataSet"
-        Me.JCLODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TimetableTableAdapter
-        '
-        Me.TimetableTableAdapter.ClearBeforeFill = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(63, 355)
+        Me.Button1.Location = New System.Drawing.Point(53, 389)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'KLSentralDataGridViewTextBoxColumn
+        'JCLODataSet
         '
-        Me.KLSentralDataGridViewTextBoxColumn.DataPropertyName = "KL Sentral"
-        Me.KLSentralDataGridViewTextBoxColumn.HeaderText = "KL Sentral"
-        Me.KLSentralDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.KLSentralDataGridViewTextBoxColumn.Name = "KLSentralDataGridViewTextBoxColumn"
-        Me.KLSentralDataGridViewTextBoxColumn.Width = 125
+        Me.JCLODataSet.DataSetName = "JCLODataSet"
+        Me.JCLODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'KualaLumpurDataGridViewTextBoxColumn
+        'TimetableBindingSource
         '
-        Me.KualaLumpurDataGridViewTextBoxColumn.DataPropertyName = "Kuala Lumpur"
-        Me.KualaLumpurDataGridViewTextBoxColumn.HeaderText = "Kuala Lumpur"
-        Me.KualaLumpurDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.KualaLumpurDataGridViewTextBoxColumn.Name = "KualaLumpurDataGridViewTextBoxColumn"
-        Me.KualaLumpurDataGridViewTextBoxColumn.Width = 125
+        Me.TimetableBindingSource.DataMember = "Timetable"
+        Me.TimetableBindingSource.DataSource = Me.JCLODataSet
         '
-        'TanjungMalimDataGridViewTextBoxColumn
+        'TimetableTableAdapter
         '
-        Me.TanjungMalimDataGridViewTextBoxColumn.DataPropertyName = "Tanjung Malim"
-        Me.TanjungMalimDataGridViewTextBoxColumn.HeaderText = "Tanjung Malim"
-        Me.TanjungMalimDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TanjungMalimDataGridViewTextBoxColumn.Name = "TanjungMalimDataGridViewTextBoxColumn"
-        Me.TanjungMalimDataGridViewTextBoxColumn.Width = 125
+        Me.TimetableTableAdapter.ClearBeforeFill = True
         '
-        'KamparDataGridViewTextBoxColumn
+        'TableAdapterManager
         '
-        Me.KamparDataGridViewTextBoxColumn.DataPropertyName = "Kampar"
-        Me.KamparDataGridViewTextBoxColumn.HeaderText = "Kampar"
-        Me.KamparDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.KamparDataGridViewTextBoxColumn.Name = "KamparDataGridViewTextBoxColumn"
-        Me.KamparDataGridViewTextBoxColumn.Width = 125
-        '
-        'BatuGajahDataGridViewTextBoxColumn
-        '
-        Me.BatuGajahDataGridViewTextBoxColumn.DataPropertyName = "Batu Gajah"
-        Me.BatuGajahDataGridViewTextBoxColumn.HeaderText = "Batu Gajah"
-        Me.BatuGajahDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.BatuGajahDataGridViewTextBoxColumn.Name = "BatuGajahDataGridViewTextBoxColumn"
-        Me.BatuGajahDataGridViewTextBoxColumn.Width = 125
-        '
-        'IpohDataGridViewTextBoxColumn
-        '
-        Me.IpohDataGridViewTextBoxColumn.DataPropertyName = "Ipoh"
-        Me.IpohDataGridViewTextBoxColumn.HeaderText = "Ipoh"
-        Me.IpohDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.IpohDataGridViewTextBoxColumn.Name = "IpohDataGridViewTextBoxColumn"
-        Me.IpohDataGridViewTextBoxColumn.Width = 125
-        '
-        'KualaKangsarDataGridViewTextBoxColumn
-        '
-        Me.KualaKangsarDataGridViewTextBoxColumn.DataPropertyName = "Kuala Kangsar"
-        Me.KualaKangsarDataGridViewTextBoxColumn.HeaderText = "Kuala Kangsar"
-        Me.KualaKangsarDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.KualaKangsarDataGridViewTextBoxColumn.Name = "KualaKangsarDataGridViewTextBoxColumn"
-        Me.KualaKangsarDataGridViewTextBoxColumn.Width = 125
-        '
-        'TaipingDataGridViewTextBoxColumn
-        '
-        Me.TaipingDataGridViewTextBoxColumn.DataPropertyName = "Taiping"
-        Me.TaipingDataGridViewTextBoxColumn.HeaderText = "Taiping"
-        Me.TaipingDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TaipingDataGridViewTextBoxColumn.Name = "TaipingDataGridViewTextBoxColumn"
-        Me.TaipingDataGridViewTextBoxColumn.Width = 125
-        '
-        'BukitMertajamDataGridViewTextBoxColumn
-        '
-        Me.BukitMertajamDataGridViewTextBoxColumn.DataPropertyName = "Bukit Mertajam"
-        Me.BukitMertajamDataGridViewTextBoxColumn.HeaderText = "Bukit Mertajam"
-        Me.BukitMertajamDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.BukitMertajamDataGridViewTextBoxColumn.Name = "BukitMertajamDataGridViewTextBoxColumn"
-        Me.BukitMertajamDataGridViewTextBoxColumn.Width = 125
-        '
-        'ButterworthDataGridViewTextBoxColumn
-        '
-        Me.ButterworthDataGridViewTextBoxColumn.DataPropertyName = "Butterworth"
-        Me.ButterworthDataGridViewTextBoxColumn.HeaderText = "Butterworth"
-        Me.ButterworthDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ButterworthDataGridViewTextBoxColumn.Name = "ButterworthDataGridViewTextBoxColumn"
-        Me.ButterworthDataGridViewTextBoxColumn.Width = 125
-        '
-        'SungaiPetaniDataGridViewTextBoxColumn
-        '
-        Me.SungaiPetaniDataGridViewTextBoxColumn.DataPropertyName = "Sungai Petani"
-        Me.SungaiPetaniDataGridViewTextBoxColumn.HeaderText = "Sungai Petani"
-        Me.SungaiPetaniDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.SungaiPetaniDataGridViewTextBoxColumn.Name = "SungaiPetaniDataGridViewTextBoxColumn"
-        Me.SungaiPetaniDataGridViewTextBoxColumn.Width = 125
-        '
-        'GurunDataGridViewTextBoxColumn
-        '
-        Me.GurunDataGridViewTextBoxColumn.DataPropertyName = "Gurun"
-        Me.GurunDataGridViewTextBoxColumn.HeaderText = "Gurun"
-        Me.GurunDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.GurunDataGridViewTextBoxColumn.Name = "GurunDataGridViewTextBoxColumn"
-        Me.GurunDataGridViewTextBoxColumn.Width = 125
-        '
-        'AlorStarDataGridViewTextBoxColumn
-        '
-        Me.AlorStarDataGridViewTextBoxColumn.DataPropertyName = "Alor Star"
-        Me.AlorStarDataGridViewTextBoxColumn.HeaderText = "Alor Star"
-        Me.AlorStarDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.AlorStarDataGridViewTextBoxColumn.Name = "AlorStarDataGridViewTextBoxColumn"
-        Me.AlorStarDataGridViewTextBoxColumn.Width = 125
-        '
-        'AnakBukitDataGridViewTextBoxColumn
-        '
-        Me.AnakBukitDataGridViewTextBoxColumn.DataPropertyName = "Anak Bukit"
-        Me.AnakBukitDataGridViewTextBoxColumn.HeaderText = "Anak Bukit"
-        Me.AnakBukitDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.AnakBukitDataGridViewTextBoxColumn.Name = "AnakBukitDataGridViewTextBoxColumn"
-        Me.AnakBukitDataGridViewTextBoxColumn.Width = 125
-        '
-        'ArauDataGridViewTextBoxColumn
-        '
-        Me.ArauDataGridViewTextBoxColumn.DataPropertyName = "Arau"
-        Me.ArauDataGridViewTextBoxColumn.HeaderText = "Arau"
-        Me.ArauDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ArauDataGridViewTextBoxColumn.Name = "ArauDataGridViewTextBoxColumn"
-        Me.ArauDataGridViewTextBoxColumn.Width = 125
-        '
-        'PadangBesarDataGridViewTextBoxColumn
-        '
-        Me.PadangBesarDataGridViewTextBoxColumn.DataPropertyName = "Padang Besar"
-        Me.PadangBesarDataGridViewTextBoxColumn.HeaderText = "Padang Besar"
-        Me.PadangBesarDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PadangBesarDataGridViewTextBoxColumn.Name = "PadangBesarDataGridViewTextBoxColumn"
-        Me.PadangBesarDataGridViewTextBoxColumn.Width = 125
-        '
-        'IDDataGridViewTextBoxColumn
-        '
-        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
-        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
-        Me.IDDataGridViewTextBoxColumn.Width = 125
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.PadangBesarDataGridViewTextBoxColumn, Me.ArauDataGridViewTextBoxColumn, Me.AnakBukitDataGridViewTextBoxColumn, Me.AlorStarDataGridViewTextBoxColumn, Me.GurunDataGridViewTextBoxColumn, Me.SungaiPetaniDataGridViewTextBoxColumn, Me.ButterworthDataGridViewTextBoxColumn, Me.BukitMertajamDataGridViewTextBoxColumn, Me.TaipingDataGridViewTextBoxColumn, Me.KualaKangsarDataGridViewTextBoxColumn, Me.IpohDataGridViewTextBoxColumn, Me.BatuGajahDataGridViewTextBoxColumn, Me.KamparDataGridViewTextBoxColumn, Me.TanjungMalimDataGridViewTextBoxColumn, Me.KualaLumpurDataGridViewTextBoxColumn, Me.KLSentralDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.TimetableBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(39, 62)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(708, 198)
-        Me.DataGridView1.TabIndex = 0
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.MemberTableAdapter = Nothing
+        Me.TableAdapterManager.TicketTableAdapter = Nothing
+        Me.TableAdapterManager.TimetableTableAdapter = Me.TimetableTableAdapter
+        Me.TableAdapterManager.UpdateOrder = ETS_System.JCLODataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'TimetableBindingNavigator
         '
@@ -262,33 +114,8 @@ Partial Class FormDatabase
         Me.TimetableBindingNavigator.Name = "TimetableBindingNavigator"
         Me.TimetableBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
         Me.TimetableBindingNavigator.Size = New System.Drawing.Size(800, 27)
-        Me.TimetableBindingNavigator.TabIndex = 22
+        Me.TimetableBindingNavigator.TabIndex = 2
         Me.TimetableBindingNavigator.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -296,7 +123,7 @@ Partial Class FormDatabase
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 22)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
         'BindingNavigatorMovePreviousItem
@@ -305,28 +132,34 @@ Partial Class FormDatabase
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 22)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorPositionItem
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 20)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -348,68 +181,210 @@ Partial Class FormDatabase
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'TimetableBindingNavigatorSaveItem
         '
         Me.TimetableBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TimetableBindingNavigatorSaveItem.Image = CType(resources.GetObject("TimetableBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.TimetableBindingNavigatorSaveItem.Name = "TimetableBindingNavigatorSaveItem"
-        Me.TimetableBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.TimetableBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
         Me.TimetableBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'TableAdapterManager
+        'TimetableDataGridView
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.TicketTableAdapter = Nothing
-        Me.TableAdapterManager.TimetableTableAdapter = Me.TimetableTableAdapter
-        Me.TableAdapterManager.UpdateOrder = ETS_System.JCLODataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TimetableDataGridView.AutoGenerateColumns = False
+        Me.TimetableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TimetableDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17})
+        Me.TimetableDataGridView.DataSource = Me.TimetableBindingSource
+        Me.TimetableDataGridView.Location = New System.Drawing.Point(53, 82)
+        Me.TimetableDataGridView.Name = "TimetableDataGridView"
+        Me.TimetableDataGridView.RowHeadersWidth = 51
+        Me.TimetableDataGridView.RowTemplate.Height = 24
+        Me.TimetableDataGridView.Size = New System.Drawing.Size(703, 267)
+        Me.TimetableDataGridView.TabIndex = 2
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Train ID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Train ID"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Width = 125
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Padang Besar"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Padang Besar"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 125
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Arau"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Arau"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 125
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Anak Bukit"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Anak Bukit"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 125
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Alor Star"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Alor Star"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 125
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Gurun"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Gurun"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 125
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Sungai Petani"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Sungai Petani"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Width = 125
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Butterworth"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Butterworth"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.Width = 125
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Bukit Mertajam"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Bukit Mertajam"
+        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.Width = 125
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Taiping"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Taiping"
+        Me.DataGridViewTextBoxColumn10.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.Width = 125
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "Kuala Kangsar"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Kuala Kangsar"
+        Me.DataGridViewTextBoxColumn11.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.Width = 125
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "Ipoh"
+        Me.DataGridViewTextBoxColumn12.HeaderText = "Ipoh"
+        Me.DataGridViewTextBoxColumn12.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        Me.DataGridViewTextBoxColumn12.Width = 125
+        '
+        'DataGridViewTextBoxColumn13
+        '
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "Batu Gajah"
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Batu Gajah"
+        Me.DataGridViewTextBoxColumn13.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        Me.DataGridViewTextBoxColumn13.Width = 125
+        '
+        'DataGridViewTextBoxColumn14
+        '
+        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Kampar"
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Kampar"
+        Me.DataGridViewTextBoxColumn14.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        Me.DataGridViewTextBoxColumn14.Width = 125
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Tanjung Malim"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "Tanjung Malim"
+        Me.DataGridViewTextBoxColumn15.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        Me.DataGridViewTextBoxColumn15.Width = 125
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Kuala Lumpur"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "Kuala Lumpur"
+        Me.DataGridViewTextBoxColumn16.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.Width = 125
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "KL Sentral"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "KL Sentral"
+        Me.DataGridViewTextBoxColumn17.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.Width = 125
         '
         'FormDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TimetableDataGridView)
         Me.Controls.Add(Me.TimetableBindingNavigator)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Name = "FormDatabase"
         Me.Text = "FormDatabase"
-        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.JCLODataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TimetableBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TimetableBindingNavigator.ResumeLayout(False)
         Me.TimetableBindingNavigator.PerformLayout()
+        CType(Me.TimetableDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents JCLODataSetBindingSource As BindingSource
+    Friend WithEvents Button1 As Button
+    Friend WithEvents IDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents JCLODataSet As JCLODataSet
     Friend WithEvents TimetableBindingSource As BindingSource
     Friend WithEvents TimetableTableAdapter As JCLODataSetTableAdapters.TimetableTableAdapter
-    Friend WithEvents Button1 As Button
-    Friend WithEvents KLSentralDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents KualaLumpurDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TanjungMalimDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents KamparDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents BatuGajahDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents IpohDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents KualaKangsarDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TaipingDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents BukitMertajamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ButterworthDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SungaiPetaniDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GurunDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents AlorStarDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents AnakBukitDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ArauDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PadangBesarDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents IDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents TableAdapterManager As JCLODataSetTableAdapters.TableAdapterManager
     Friend WithEvents TimetableBindingNavigator As BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
@@ -423,5 +398,22 @@ Partial Class FormDatabase
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents TimetableBindingNavigatorSaveItem As ToolStripButton
-    Friend WithEvents TableAdapterManager As JCLODataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TimetableDataGridView As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
 End Class
