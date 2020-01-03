@@ -1,4 +1,6 @@
 ﻿Public Class Frontpage
+    Dim NumAdult As Integer
+    Dim NumChild
     Private Sub Frontpage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LinkLabel1.Visible = False
         LabelReturn.Visible = False
@@ -39,6 +41,9 @@
                 MessageBox.Show("No passenger selected", "Invalid Passenger", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
 
             Else
+                NumAdult = ComboBox5Adult.SelectedIndex
+                NumChild = ComboBox6Child.SelectedIndex
+
                 FormSelect.Show()
                 Me.Hide()
             End If

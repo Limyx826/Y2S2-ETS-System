@@ -525,6 +525,7 @@ Partial Class FormSeat
         Me.TestButton.TabIndex = 38
         Me.TestButton.Text = "Test"
         Me.TestButton.UseVisualStyleBackColor = True
+        Me.TestButton.Visible = False
         '
         'PictureBox1
         '

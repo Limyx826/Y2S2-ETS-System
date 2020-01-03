@@ -13,6 +13,7 @@ Public Class FormLogin
             Me.Close()
             Frontpage.Show()
             Frontpage.LinkLabel1.Visible = True
+            FormSeat.TestButton.Visible = True
         Else
             MessageBox.Show("Invalid", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Hand)
         End If

@@ -13,7 +13,7 @@
     End Sub
 
     Private Sub EmailTextBox_TextChanged(sender As Object, e As EventArgs) Handles EmailTextBox.TextChanged
-        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) <> 0 Then
+        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) = 0 Then
             If String.Compare(ICTextBox.Text, "") <> 0 And String.Compare(UsernameTextBox.Text, "") <> 0 And
             String.Compare(PasswordTextBox.Text, "") <> 0 And String.Compare(ConPassTextBox.Text, "") <> 0 Then
 
@@ -23,7 +23,7 @@
     End Sub
 
     Private Sub ICTextBox_TextChanged(sender As Object, e As EventArgs) Handles ICTextBox.TextChanged
-        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) <> 0 Then
+        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) = 0 Then
             If String.Compare(EmailTextBox.Text, "") <> 0 And String.Compare(UsernameTextBox.Text, "") <> 0 And
             String.Compare(PasswordTextBox.Text, "") <> 0 And String.Compare(ConPassTextBox.Text, "") <> 0 Then
 
@@ -33,7 +33,7 @@
     End Sub
 
     Private Sub UsernameTextBox_TextChanged(sender As Object, e As EventArgs) Handles UsernameTextBox.TextChanged
-        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) <> 0 Then
+        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) = 0 Then
             If String.Compare(ICTextBox.Text, "") <> 0 And String.Compare(EmailTextBox.Text, "") <> 0 And
             String.Compare(PasswordTextBox.Text, "") <> 0 And String.Compare(ConPassTextBox.Text, "") <> 0 Then
 
@@ -43,7 +43,7 @@
     End Sub
 
     Private Sub PasswordTextBox_TextChanged(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
-        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) <> 0 Then
+        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) = 0 Then
             If String.Compare(ICTextBox.Text, "") <> 0 And String.Compare(UsernameTextBox.Text, "") <> 0 And
             String.Compare(EmailTextBox.Text, "") <> 0 And String.Compare(ConPassTextBox.Text, "") <> 0 Then
 
@@ -53,7 +53,7 @@
     End Sub
 
     Private Sub ConPassTextBox_TextChanged(sender As Object, e As EventArgs) Handles ConPassTextBox.TextChanged
-        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) <> 0 Then
+        If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) = 0 Then
             'Dim balloonToolTip As New ToolTip()
             'balloonToolTip.UseFading = True
             'balloonToolTip.UseAnimation = True

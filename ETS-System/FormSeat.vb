@@ -175,5 +175,9 @@
     Private Sub B9D_Click(sender As Object, e As EventArgs) Handles B9D.Click
         Choose(B9D)
     End Sub
+
+    Private Sub FormSeat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
 
