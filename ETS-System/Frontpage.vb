@@ -1,6 +1,6 @@
 ﻿Public Class Frontpage
-    Dim NumAdult As Integer
-    Dim NumChild
+    Public NumAdult As Integer
+    Public NumChild As Integer
     Private Sub Frontpage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LinkLabel1.Visible = False
         LabelReturn.Visible = False

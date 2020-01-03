@@ -15,12 +15,16 @@
         Me.Close()
     End Sub
 
+    Dim seatpass As Integer = 0
     Sub Choose(ByRef B As Object)
         If B.BackColor <> Color.Gainsboro Then
-            If B.BackColor = Color.CornflowerBlue Then
-                B.BackColor = Color.DarkOrange
-            Else
-                B.BackColor = Color.CornflowerBlue
+            If seatpass = TotalPass Then
+                If B.BackColor = Color.CornflowerBlue Then
+                    B.BackColor = Color.DarkOrange
+                    seatpass += 1
+                Else
+                    B.BackColor = Color.CornflowerBlue
+                End If
             End If
         End If
     End Sub
@@ -176,7 +180,10 @@
         Choose(B9D)
     End Sub
 
+    Public TotalPass As Integer
     Private Sub FormSeat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TotalPass = Frontpage.NumAdult + Frontpage.NumChild
+
 
     End Sub
 End Class

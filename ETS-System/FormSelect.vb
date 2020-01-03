@@ -198,8 +198,10 @@ Public Class FormSelect
 
 
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
-
-
+            RB1.Text = "ES"
+            RB2.Text =
+            RB3.Text =
+            RB4.Text =
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 1 Then
 
 
@@ -213,6 +215,7 @@ Public Class FormSelect
     End Sub
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+        If 
         FormSeat.Show()
         Me.Close()
     End Sub

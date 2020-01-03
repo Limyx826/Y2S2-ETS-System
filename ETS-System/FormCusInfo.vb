@@ -111,7 +111,7 @@
     End Sub
 
     Private Sub FormCusInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        For x As Integer = 1 To 3
+        For x As Integer = 1 To FormSeat.TotalPass
             CreateCusInfo()
             CreateSeatLabel(CurrentCusInfoPnlName)
             CreateNameLabel(CurrentCusInfoPnlName)

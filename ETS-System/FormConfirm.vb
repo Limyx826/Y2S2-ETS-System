@@ -15,6 +15,8 @@
             LabelArrivalBack.Visible = True
         End If
 
+
+
         If Label8.Visible = False Then
             Me.Height = CurrentHeight - 150
         End If
