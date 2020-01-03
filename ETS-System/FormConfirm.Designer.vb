@@ -52,6 +52,7 @@ Partial Class FormConfirm
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -151,6 +152,7 @@ Partial Class FormConfirm
         Me.GroupBox2.AutoSize = True
         Me.GroupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.Label)
         Me.GroupBox2.Controls.Add(Me.LabelArrivalBack)
         Me.GroupBox2.Controls.Add(Me.LabelDepartureBack)
         Me.GroupBox2.Controls.Add(Me.LabelClassBack)
@@ -358,11 +360,11 @@ Partial Class FormConfirm
         'LabelTotal
         '
         Me.LabelTotal.AutoSize = True
-        Me.LabelTotal.Location = New System.Drawing.Point(27, 73)
+        Me.LabelTotal.Location = New System.Drawing.Point(121, 73)
         Me.LabelTotal.Name = "LabelTotal"
-        Me.LabelTotal.Size = New System.Drawing.Size(61, 24)
+        Me.LabelTotal.Size = New System.Drawing.Size(53, 24)
         Me.LabelTotal.TabIndex = 1
-        Me.LabelTotal.Text = "Total :"
+        Me.LabelTotal.Text = "NUM"
         '
         'Label4
         '
@@ -390,6 +392,15 @@ Partial Class FormConfirm
         Me.Label3.Size = New System.Drawing.Size(169, 24)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Origin - Destination"
+        '
+        'Label
+        '
+        Me.Label.AutoSize = True
+        Me.Label.Location = New System.Drawing.Point(25, 73)
+        Me.Label.Name = "Label"
+        Me.Label.Size = New System.Drawing.Size(90, 24)
+        Me.Label.TabIndex = 23
+        Me.Label.Text = "Total: RM"
         '
         'FormConfirm
         '
@@ -447,4 +458,5 @@ Partial Class FormConfirm
     Friend WithEvents LabelTrainGo As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label As Label
 End Class

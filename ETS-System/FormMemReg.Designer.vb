@@ -36,7 +36,7 @@ Partial Class FormMemReg
         Me.ConPassTextBox = New System.Windows.Forms.TextBox()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.ICTextBox = New System.Windows.Forms.MaskedTextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -173,12 +173,12 @@ Partial Class FormMemReg
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
         '
-        'MaskedTextBox1
+        'ICTextBox
         '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(264, 133)
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(399, 22)
-        Me.MaskedTextBox1.TabIndex = 14
+        Me.ICTextBox.Location = New System.Drawing.Point(264, 133)
+        Me.ICTextBox.Name = "ICTextBox"
+        Me.ICTextBox.Size = New System.Drawing.Size(399, 22)
+        Me.ICTextBox.TabIndex = 14
         '
         'FormMemReg
         '
@@ -187,7 +187,7 @@ Partial Class FormMemReg
         Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 418)
-        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.ICTextBox)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ConPassTextBox)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -225,5 +225,5 @@ Partial Class FormMemReg
     Friend WithEvents ConPassTextBox As TextBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents ICTextBox As MaskedTextBox
 End Class

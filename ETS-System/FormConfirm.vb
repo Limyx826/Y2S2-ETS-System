@@ -1,6 +1,9 @@
 ﻿Public Class FormConfirm
     Const TrainPrice1S As Double = 7
+    Const TrainPrice1C As Double = 5.5
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim Total = Frontpage.NumChild * TrainPrice1C * (Frontpage.ComboBox2Destination.SelectedIndex - Frontpage.ComboBox1Origin.SelectedIndex) + Frontpage.NumAdult * TrainPrice1S * (Frontpage.ComboBox2Destination.SelectedIndex - Frontpage.ComboBox1Origin.SelectedIndex)
+
         Dim CurrentHeight As Integer = Me.Height
         Label3 = Frontpage.ComboBox1Origin.SelectedItem + " - " + Frontpage.ComboBox2Destination.SelectedItem
         LabelTrainGo.Text = FormSelect.TrainGo

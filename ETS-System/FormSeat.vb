@@ -17,27 +17,31 @@
 
     Dim seatpass As Integer = 0
     Sub Choose(ByRef B As Object)
-        If B.BackColor <> Color.Gainsboro Then
-            If seatpass = TotalPass Then
-                If B.BackColor = Color.CornflowerBlue Then
-                    B.BackColor = Color.DarkOrange
-                    seatpass += 1
-                Else
-                    B.BackColor = Color.CornflowerBlue
+        If seatpass = TotalPass Then
+            If B.BackColor <> Color.Gainsboro Then
+                If seatpass = TotalPass Then
+                    If B.BackColor = Color.CornflowerBlue Then
+                        B.BackColor = Color.DarkOrange
+                        seatpass += 1
+                    Else
+                        B.BackColor = Color.CornflowerBlue
+                    End If
                 End If
             End If
         End If
     End Sub
 
     Private Sub B1A_Click(sender As Object, e As EventArgs) Handles B1A.Click
-        If B1A.BackColor <> Color.Gainsboro Then
-            If B1A.BackColor = Color.CornflowerBlue Then
-                B1A.BackColor = Color.DarkOrange
-            Else
-                B1A.BackColor = Color.CornflowerBlue
+        If seatpass = TotalPass Then
+            If B1A.BackColor <> Color.Gainsboro Then
+                If B1A.BackColor = Color.CornflowerBlue Then
+                    B1A.BackColor = Color.DarkOrange
+                    seatpass += 1
+                Else
+                    B1A.BackColor = Color.CornflowerBlue
+                End If
             End If
         End If
-
     End Sub
 
     Private Sub B2A_Click(sender As Object, e As EventArgs) Handles B2A.Click

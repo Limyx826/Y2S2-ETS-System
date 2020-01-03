@@ -35,6 +35,7 @@ Partial Class Payment
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.LabelNum = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -180,6 +181,18 @@ Partial Class Payment
         Me.PictureBox2.TabIndex = 14
         Me.PictureBox2.TabStop = False
         '
+        'LabelNum
+        '
+        Me.LabelNum.AutoSize = True
+        Me.LabelNum.BackColor = System.Drawing.Color.Transparent
+        Me.LabelNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNum.Location = New System.Drawing.Point(573, 297)
+        Me.LabelNum.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelNum.Name = "LabelNum"
+        Me.LabelNum.Size = New System.Drawing.Size(47, 20)
+        Me.LabelNum.TabIndex = 15
+        Me.LabelNum.Text = "NUM"
+        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -187,6 +200,7 @@ Partial Class Payment
         Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(704, 398)
+        Me.Controls.Add(Me.LabelNum)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label5)
@@ -216,4 +230,5 @@ Partial Class Payment
     Friend WithEvents MaskedTextBox2 As MaskedTextBox
     Friend WithEvents MaskedTextBox6 As MaskedTextBox
     Friend WithEvents MaskedTextBox3 As MaskedTextBox
+    Friend WithEvents LabelNum As Label
 End Class

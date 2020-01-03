@@ -23,4 +23,8 @@
     Private Sub MaskedTextBox2_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox2.MaskInputRejected
 
     End Sub
+
+    Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LabelNum.Text = FormConfirm.Text
+    End Sub
 End Class
