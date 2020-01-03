@@ -198,19 +198,25 @@ Public Class FormSelect
 
 
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
-            RB1.Text = "ES"
-            RB2.Text =
-            RB3.Text =
-            RB4.Text =
+            RB1.Text = "ES1201 , departure time 6.00AM,"
+            RB2.Text = "ES1202 , departure time 4.00AM,"
+            RB3.Text = "ES1203 , departure time 2.00AM,"
+            RB4.Text = "ES1204 , departure time 1.00AM,"
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 1 Then
-
-
+            RB1.Text = "ES1205 , departure time 11.00AM,"
+            RB2.Text = "ES1206 , departure time 9.00AM,"
+            RB3.Text = "ES1207 , departure time 8.00AM,"
+            RB4.Text = "ES1208 , departure time 7.00AM,"
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 2 Then
-
-
+            RB1.Text = "ES1209 , departure time 6.00PM,"
+            RB2.Text = "ES1210 , departure time 4.00PM,"
+            RB3.Text = "ES1211 , departure time 2.00PM,"
+            RB4.Text = "ES1212 , departure time 11.00PM,"
         Else
-
-
+            RB1.Text = "ES1213 , departure time 11.00PM,"
+            RB2.Text = "ES1214 , departure time 9.00PM,"
+            RB3.Text = "ES1215 , departure time 7.00PM,"
+            RB4.Text = "ES1216 , departure time 2.00PM,"
         End If
     End Sub
 

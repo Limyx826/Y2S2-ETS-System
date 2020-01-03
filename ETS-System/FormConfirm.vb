@@ -15,7 +15,7 @@
             LabelArrivalBack.Visible = True
         End If
 
-
+        If 
 
         If Label8.Visible = False Then
             Me.Height = CurrentHeight - 150
@@ -30,5 +30,9 @@
     Private Sub Return_Button_Click(sender As Object, e As EventArgs) Handles Return_Button.Click
         FormCusInfo.Show()
         Me.Close()
+    End Sub
+
+    Private Sub LabelTrainGo_Click(sender As Object, e As EventArgs) Handles LabelTrainGo.Click
+
     End Sub
 End Class
