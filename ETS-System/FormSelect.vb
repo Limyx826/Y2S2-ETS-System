@@ -221,7 +221,7 @@ Public Class FormSelect
     End Sub
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        If 
+
         FormSeat.Show()
         Me.Close()
     End Sub
