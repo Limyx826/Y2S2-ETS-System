@@ -1,11 +1,10 @@
 ﻿Public Class FormConfirm
     Const TrainPrice1S As Double = 7
-
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim CurrentHeight As Integer = Me.Height
-        'LabelTrainGo =
+        'LabelTrainGo = 
         'LabelDepartureGo =
-        'Label
+        'LabelArrivalGo =
 
         If Frontpage.RBReturn.Checked = True Then
             Label12.Visible = True
