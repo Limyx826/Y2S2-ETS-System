@@ -182,11 +182,16 @@ Public Class FormSelect
         Me.Close()
     End Sub
 
-    Public str1 As String
-    Public str2 As String
-
-    Public str3 As String
-    Public str4 As String
+    Dim str1 As String
+    Dim str2 As String
+    Dim str3 As String
+    Dim str4 As String
+    Public TrainGo As String
+    Public DepartureGo As String
+    Dim dt1 As String
+    Dim dt2 As String
+    Dim dt3 As String
+    Dim dt4 As String
     Private Sub FormSelect_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With ListView1
             With .Items
@@ -203,21 +208,53 @@ Public Class FormSelect
 
 
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
-            RB1.Text = str1 = "ES1201" + " , " + "departure time 6.00AM,"
-            RB2.Text = str2 = "ES1202 , departure time 4.00AM,"
-            RB3.Text = "ES1203 , departure time 2.00AM,"
-            RB4.Text = "ES1204 , departure time 1.00AM,"
+            str1 = "ES1201"
+            dt1 = "departure time 6.00AM"
+            str2 = "ES1202"
+            dt2 = "departure time 4.00AM"
+            str3 = "ES1203"
+            dt3 = "departure time 2.00AM"
+            str4 = "ES1204"
+            dt4 = "departure time 1.00AM,"
+            RB1.Text = str1 + " , " + dt1
+            RB2.Text = str2 + " , " + dt2
+            RB3.Text = str3 + " , " + dt3
+            RB4.Text = str4 + " , " + dt4
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 1 Then
-            RB1.Text = "ES1205 , departure time 11.00AM,"
-            RB2.Text = "ES1206 , departure time 9.00AM,"
-            RB3.Text = "ES1207 , departure time 8.00AM,"
-            RB4.Text = "ES1208 , departure time 7.00AM,"
+            str1 = "ES1205"
+            dt1 = "departure time 11.00AM"
+            str2 = "ES1206"
+            dt2 = "departure time 9.00AM,"
+            str3 = "ES1207"
+            dt3 = "departure time 8.00AM"
+            str4 = "ES1208"
+            dt4 = "departure time 7.00AM"
+            RB1.Text = str1 + " , " + dt1
+            RB2.Text = str2 + " , " + dt2
+            RB3.Text = str3 + " , " + dt3
+            RB4.Text = str4 + " , " + dt4
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 2 Then
-            RB1.Text = "ES1209 , departure time 6.00PM,"
-            RB2.Text = "ES1210 , departure time 4.00PM,"
-            RB3.Text = "ES1211 , departure time 2.00PM,"
-            RB4.Text = "ES1212 , departure time 11.00PM,"
+            str1 = "ES1209"
+            dt1 = "departure time 6.00PM"
+            str2 = "ES1210"
+            dt2 = "departure time 4.00PM"
+            str3 = "ES1211"
+            dt3 = "departure time 2.00PM"
+            str4 = "ES1212"
+            dt4 = "departure time 11.00PM,"
+            RB1.Text = str1 + " , " + dt1
+            RB2.Text = str2 + " , " + dt2
+            RB3.Text = str3 + " , " + dt3
+            RB4.Text = str4 + " , " + dt4
         Else
+            str1 =
+            dt1 =
+            str2 =
+            dt2 =
+            str3 =
+            dt3 =
+            str4 =
+            dt4 =
             RB1.Text = "ES1213 , departure time 11.00PM,"
             RB2.Text = "ES1214 , departure time 9.00PM,"
             RB3.Text = "ES1215 , departure time 7.00PM,"

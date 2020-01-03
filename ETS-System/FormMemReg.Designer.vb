@@ -165,6 +165,7 @@ Partial Class FormMemReg
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.ETS_System.My.Resources.Resources.ETS
         Me.PictureBox1.Location = New System.Drawing.Point(0, 1)
         Me.PictureBox1.Name = "PictureBox1"
