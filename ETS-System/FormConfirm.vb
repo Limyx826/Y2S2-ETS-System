@@ -3,6 +3,10 @@
 
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim CurrentHeight As Integer = Me.Height
+        'LabelTrainGo =
+        'LabelDepartureGo =
+        'Label
+
         If Frontpage.RBReturn.Checked = True Then
             Label12.Visible = True
             Label11.Visible = True
@@ -14,6 +18,7 @@
             LabelDepartureBack.Visible = True
             LabelArrivalBack.Visible = True
         End If
+
 
 
 
