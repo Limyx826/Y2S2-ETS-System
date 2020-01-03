@@ -22,7 +22,7 @@
         End If
     End Sub
 
-    Private Sub ICTextBox_TextChanged(sender As Object, e As EventArgs) Handles ICTextBox.TextChanged
+    Private Sub ICTextBox_TextChanged(sender As Object, e As EventArgs)
         If String.Compare(ConPassTextBox.Text, PasswordTextBox.Text) = 0 Then
             If String.Compare(EmailTextBox.Text, "") <> 0 And String.Compare(UsernameTextBox.Text, "") <> 0 And
             String.Compare(PasswordTextBox.Text, "") <> 0 And String.Compare(ConPassTextBox.Text, "") <> 0 Then
