@@ -359,6 +359,7 @@ Public Class FormSelect
             End If
         End If
         FormSeat.Show()
-        Me.Close()
+        Me.Hide()
+        'Me.Close()
     End Sub
 End Class

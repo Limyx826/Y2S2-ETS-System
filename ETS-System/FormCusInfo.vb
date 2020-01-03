@@ -26,7 +26,7 @@
 
         With SeatLabel
             .Location = New Point(43, 19)
-            .Text = New String("Label" + CusInfoPnlCount.ToString)
+            .Text = New String("Customer Info " + CusInfoPnlCount.ToString)
         End With
 
         For Each controlObject As Control In FlowLayoutPanel1.Controls
@@ -105,15 +105,27 @@
         Me.Close()
     End Sub
 
+    Private Sub CheckTextBox(T As Integer)
+        Dim str As String = "TextBox"
+        Dim c As Control = Me.Controls(str + T.ToString)
+
+        If c.Text = "" Then
+            MessageBox.Show("Please Fill Up all", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
     Private Sub Button_Next_Click(sender As Object, e As EventArgs) Handles Button_Next.Click
+        For x As Integer = 0 To 2 * FormSeat.TotalPass
+            CheckTextBox(x)
+        Next
         FormConfirm.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub FormCusInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For x As Integer = 1 To FormSeat.TotalPass
             CreateCusInfo()
-            'CreateSeatLabel(CurrentCusInfoPnlName)
+            CreateSeatLabel(CurrentCusInfoPnlName)
             CreateNameLabel(CurrentCusInfoPnlName)
             CreateICLabel(CurrentCusInfoPnlName)
             CreateNameTB(CurrentCusInfoPnlName)

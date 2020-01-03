@@ -8,12 +8,21 @@ Public Class FormLogin
     ' Subsequently, My.User will return identity information encapsulated in the CustomPrincipal object
     ' such as the username, display name, etc.
 
+    Public MemIN As Integer = 0
+    Public StaffIn As Integer = 0
+
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         If StaffIDTextBox.Text = "Admin" And StaffPasswordTextBox.Text = "jclo" Then
-            Me.Close()
+
+            Me.Hide()
             Frontpage.Show()
             Frontpage.LinkLabel1.Visible = True
             FormSeat.TestButton.Visible = True
+            StaffIN = 1
+        ElseIf UsernameTextBox.Text = "Jason" And PasswordTextBox.Text = "1234" Then
+            Me.Hide()
+            Frontpage.Show()
+            MemIN = 1
         Else
             MessageBox.Show("Invalid", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Hand)
         End If

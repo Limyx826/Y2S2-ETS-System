@@ -7,7 +7,7 @@
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
         FormCusInfo.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
@@ -185,10 +185,6 @@
     Public TotalPass As Integer
     Private Sub FormSeat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TotalPass = Frontpage.NumAdult + Frontpage.NumChild
-        Label1.Text = FormSelect.TrainGo
-        Label2.Text = FormSelect.DepartureGo
-        Label3.Text = FormSelect.TrainBack
-        Label4.Text = FormSelect.DepartureBack
 
     End Sub
 End Class
