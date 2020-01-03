@@ -17,31 +17,29 @@
 
     Dim seatpass As Integer = 0
     Sub Choose(ByRef B As Object)
-        If seatpass = TotalPass Then
+        If seatpass <> TotalPass Then
             If B.BackColor <> Color.Gainsboro Then
-                If seatpass = TotalPass Then
-                    If B.BackColor = Color.CornflowerBlue Then
-                        B.BackColor = Color.DarkOrange
-                        seatpass += 1
-                    Else
-                        B.BackColor = Color.CornflowerBlue
-                    End If
+                If B.BackColor = Color.CornflowerBlue Then
+                    B.BackColor = Color.DarkOrange
+                    seatpass += 1
+                Else
+                    B.BackColor = Color.CornflowerBlue
+                    seatpass -= 1
+
+                End If
+            End If
+        Else
+            If B.BackColor <> Color.Gainsboro Then
+                If B.BackColor <> Color.CornflowerBlue Then
+                    B.BackColor = Color.CornflowerBlue
+                    seatpass -= 1
                 End If
             End If
         End If
     End Sub
 
     Private Sub B1A_Click(sender As Object, e As EventArgs) Handles B1A.Click
-        If seatpass = TotalPass Then
-            If B1A.BackColor <> Color.Gainsboro Then
-                If B1A.BackColor = Color.CornflowerBlue Then
-                    B1A.BackColor = Color.DarkOrange
-                    seatpass += 1
-                Else
-                    B1A.BackColor = Color.CornflowerBlue
-                End If
-            End If
-        End If
+        Choose(B1A)
     End Sub
 
     Private Sub B2A_Click(sender As Object, e As EventArgs) Handles B2A.Click
@@ -187,7 +185,10 @@
     Public TotalPass As Integer
     Private Sub FormSeat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TotalPass = Frontpage.NumAdult + Frontpage.NumChild
-
+        Label1.Text = FormSelect.TrainGo
+        Label2.Text = FormSelect.DepartureGo
+        Label3.Text = FormSelect.TrainBack
+        Label4.Text = FormSelect.DepartureBack
 
     End Sub
 End Class

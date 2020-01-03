@@ -3,9 +3,10 @@
     Const TrainPrice1C As Double = 5.5
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim Total = Frontpage.NumChild * TrainPrice1C * (Frontpage.ComboBox2Destination.SelectedIndex - Frontpage.ComboBox1Origin.SelectedIndex) + Frontpage.NumAdult * TrainPrice1S * (Frontpage.ComboBox2Destination.SelectedIndex - Frontpage.ComboBox1Origin.SelectedIndex)
+        LabelTotal.Text = Math.Abs(Total)
 
         Dim CurrentHeight As Integer = Me.Height
-        Label3 = Frontpage.ComboBox1Origin.SelectedItem + " - " + Frontpage.ComboBox2Destination.SelectedItem
+        Label3.Text = Frontpage.ComboBox1Origin.SelectedItem + " - " + Frontpage.ComboBox2Destination.SelectedItem
         LabelTrainGo.Text = FormSelect.TrainGo
         If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
             LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
@@ -24,13 +25,13 @@
             LabelTrainBack.Visible = True
             LabelClassBack.Visible = True
             LabelDepartureBack.Visible = True
-            LabelArrivalBack.Visible = True
-            Label12 = Frontpage.ComboBox2Destination.SelectedItem + " - " + Frontpage.ComboBox1Origin.SelectedItem
+            'LabelArrivalBack.Visible = True
+            Label12.Text = Frontpage.ComboBox2Destination.SelectedItem + " - " + Frontpage.ComboBox1Origin.SelectedItem
             LabelTrainBack.Text = FormSelect.TrainBack
             If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
-                LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
+                LabelClassBack.Text = Frontpage.ComboBox4Class.SelectedItem
             Else
-                LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
+                LabelClassBack.Text = Frontpage.ComboBox4Class.SelectedItem
             End If
             LabelDepartureBack.Text = FormSelect.DepartureBack
             'LabelArrivalBack.Text = FormSelect.DepartureBack

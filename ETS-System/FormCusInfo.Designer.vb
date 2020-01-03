@@ -135,6 +135,7 @@ Partial Class FormCusInfo
         Me.Button_Add.TabIndex = 4
         Me.Button_Add.Text = "Add"
         Me.Button_Add.UseVisualStyleBackColor = True
+        Me.Button_Add.Visible = False
         '
         'PictureBox1
         '

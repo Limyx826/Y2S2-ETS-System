@@ -215,7 +215,7 @@ Public Class FormSelect
 
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
             str1 = "ES1201"
-            dt1 = "1.00AM,"
+            dt1 = "1.00AM"
             str2 = "ES1202"
             dt2 = "2.00AM"
             str3 = "ES1203"
@@ -232,7 +232,7 @@ Public Class FormSelect
             str2 = "ES1206"
             dt2 = "8.00AM"
             str3 = "ES1207"
-            dt3 = "9.00AM,"
+            dt3 = "9.00AM"
             str4 = "ES1208"
             dt4 = "11.00AM"
             RB1.Text = str1 + " , departure time " + dt1
@@ -269,7 +269,7 @@ Public Class FormSelect
         If Frontpage.RBReturn.Checked = True Then
             If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
                 str5 = "ES1221"
-                dt5 = "1.00AM,"
+                dt5 = "1.00AM"
                 str6 = "ES1222"
                 dt6 = "2.00AM"
                 str7 = "ES1223"
@@ -286,7 +286,7 @@ Public Class FormSelect
                 str6 = "ES1226"
                 dt6 = "8.00AM"
                 str7 = "ES1227"
-                dt7 = "9.00AM,"
+                dt7 = "9.00AM"
                 str8 = "ES1228"
                 dt8 = "11.00AM"
                 RB5.Text = str5 + " , departure time " + dt5

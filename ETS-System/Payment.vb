@@ -25,6 +25,6 @@
     End Sub
 
     Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LabelNum.Text = FormConfirm.Text
+        LabelNum.Text = FormConfirm.LabelTotal.Text
     End Sub
 End Class
