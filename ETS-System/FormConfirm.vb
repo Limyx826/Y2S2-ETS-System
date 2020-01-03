@@ -2,6 +2,7 @@
     Const TrainPrice1S As Double = 7
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim CurrentHeight As Integer = Me.Height
+        Label3 = Frontpage.ComboBox1Origin.SelectedItem + " - " + Frontpage.ComboBox2Destination.SelectedItem
         LabelTrainGo.Text = FormSelect.TrainGo
         If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
             LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
@@ -9,7 +10,7 @@
             LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
         End If
         LabelDepartureGo.Text = FormSelect.DepartureGo
-        LabelArrivalGo.Text = FormSelect.DepartureGo
+        'LabelArrivalGo.Text = FormSelect.DepartureGo
 
         If Frontpage.RBReturn.Checked = True Then
             Label12.Visible = True
@@ -21,15 +22,15 @@
             LabelClassBack.Visible = True
             LabelDepartureBack.Visible = True
             LabelArrivalBack.Visible = True
-
-            LabelTrainBack.Text = FormSelect.TrainGo
+            Label12 = Frontpage.ComboBox2Destination.SelectedItem + " - " + Frontpage.ComboBox1Origin.SelectedItem
+            LabelTrainBack.Text = FormSelect.TrainBack
             If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
                 LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
             Else
                 LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
             End If
-            LabelDepartureBack.Text = FormSelect.DepartureGo
-            LabelArrivalBack.Text = FormSelect.DepartureGo
+            LabelDepartureBack.Text = FormSelect.DepartureBack
+            'LabelArrivalBack.Text = FormSelect.DepartureBack
         End If
 
 
@@ -41,7 +42,7 @@
     End Sub
 
     Private Sub Confirm_Button_Click(sender As Object, e As EventArgs) Handles Confirm_Button.Click
-        Frontpage.Show()
+        Payment.Show()
         Me.Close()
     End Sub
 

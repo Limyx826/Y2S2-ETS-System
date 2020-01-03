@@ -23,7 +23,10 @@ Partial Class Payment
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.MaskedTextBox6 = New System.Windows.Forms.MaskedTextBox()
+        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.MaskedTextBox3 = New System.Windows.Forms.MaskedTextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -32,12 +35,6 @@ Partial Class Payment
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox3 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox4 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox5 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox6 = New System.Windows.Forms.MaskedTextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,11 +43,8 @@ Partial Class Payment
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.MaskedTextBox6)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox4)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox5)
         Me.GroupBox1.Controls.Add(Me.MaskedTextBox2)
         Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox1)
         Me.GroupBox1.Controls.Add(Me.MaskedTextBox3)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -59,30 +53,54 @@ Partial Class Payment
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(16, 47)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(644, 223)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment Information"
+        '
+        'MaskedTextBox6
+        '
+        Me.MaskedTextBox6.Location = New System.Drawing.Point(218, 130)
+        Me.MaskedTextBox6.Mask = "999"
+        Me.MaskedTextBox6.Name = "MaskedTextBox6"
+        Me.MaskedTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.MaskedTextBox6.Size = New System.Drawing.Size(77, 29)
+        Me.MaskedTextBox6.TabIndex = 21
+        '
+        'MaskedTextBox2
+        '
+        Me.MaskedTextBox2.Location = New System.Drawing.Point(220, 48)
+        Me.MaskedTextBox2.Name = "MaskedTextBox2"
+        Me.MaskedTextBox2.Size = New System.Drawing.Size(402, 29)
+        Me.MaskedTextBox2.TabIndex = 16
         '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"2020", "2021", "2022", "2023", "2024", "2025", "2026"})
         Me.ComboBox2.Location = New System.Drawing.Point(293, 166)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(112, 32)
         Me.ComboBox2.TabIndex = 11
+        '
+        'MaskedTextBox3
+        '
+        Me.MaskedTextBox3.Location = New System.Drawing.Point(220, 95)
+        Me.MaskedTextBox3.Mask = "9999-9999-9999-9999"
+        Me.MaskedTextBox3.Name = "MaskedTextBox3"
+        Me.MaskedTextBox3.Size = New System.Drawing.Size(185, 29)
+        Me.MaskedTextBox3.TabIndex = 18
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"})
         Me.ComboBox1.Location = New System.Drawing.Point(220, 166)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(64, 32)
         Me.ComboBox1.TabIndex = 10
@@ -143,7 +161,7 @@ Partial Class Payment
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(487, 347)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(173, 32)
         Me.Button1.TabIndex = 2
@@ -162,48 +180,6 @@ Partial Class Payment
         Me.PictureBox2.TabIndex = 14
         Me.PictureBox2.TabStop = False
         '
-        'MaskedTextBox2
-        '
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(220, 48)
-        Me.MaskedTextBox2.Name = "MaskedTextBox2"
-        Me.MaskedTextBox2.Size = New System.Drawing.Size(402, 29)
-        Me.MaskedTextBox2.TabIndex = 16
-        '
-        'MaskedTextBox1
-        '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(287, 95)
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(61, 29)
-        Me.MaskedTextBox1.TabIndex = 17
-        '
-        'MaskedTextBox3
-        '
-        Me.MaskedTextBox3.Location = New System.Drawing.Point(220, 95)
-        Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(61, 29)
-        Me.MaskedTextBox3.TabIndex = 18
-        '
-        'MaskedTextBox4
-        '
-        Me.MaskedTextBox4.Location = New System.Drawing.Point(421, 95)
-        Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(61, 29)
-        Me.MaskedTextBox4.TabIndex = 19
-        '
-        'MaskedTextBox5
-        '
-        Me.MaskedTextBox5.Location = New System.Drawing.Point(354, 95)
-        Me.MaskedTextBox5.Name = "MaskedTextBox5"
-        Me.MaskedTextBox5.Size = New System.Drawing.Size(61, 29)
-        Me.MaskedTextBox5.TabIndex = 20
-        '
-        'MaskedTextBox6
-        '
-        Me.MaskedTextBox6.Location = New System.Drawing.Point(218, 130)
-        Me.MaskedTextBox6.Name = "MaskedTextBox6"
-        Me.MaskedTextBox6.Size = New System.Drawing.Size(77, 29)
-        Me.MaskedTextBox6.TabIndex = 21
-        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -216,7 +192,7 @@ Partial Class Payment
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Payment"
         Me.Text = "Payment"
         Me.GroupBox1.ResumeLayout(False)
@@ -239,8 +215,5 @@ Partial Class Payment
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents MaskedTextBox2 As MaskedTextBox
     Friend WithEvents MaskedTextBox6 As MaskedTextBox
-    Friend WithEvents MaskedTextBox4 As MaskedTextBox
-    Friend WithEvents MaskedTextBox5 As MaskedTextBox
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
     Friend WithEvents MaskedTextBox3 As MaskedTextBox
 End Class

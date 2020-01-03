@@ -69,11 +69,11 @@ Partial Class FormConfirm
         Me.GroupBox1.Controls.Add(Me.RBCredit)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 411)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 506)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GroupBox1.Size = New System.Drawing.Size(586, 138)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(782, 170)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment"
@@ -81,10 +81,10 @@ Partial Class FormConfirm
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.ETS_System.My.Resources.Resources.master
-        Me.PictureBox2.Location = New System.Drawing.Point(375, 41)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.PictureBox2.Location = New System.Drawing.Point(500, 50)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(47, 29)
+        Me.PictureBox2.Size = New System.Drawing.Size(63, 36)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
@@ -92,30 +92,30 @@ Partial Class FormConfirm
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ETS_System.My.Resources.Resources.visa
-        Me.PictureBox1.Location = New System.Drawing.Point(198, 41)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(264, 50)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(47, 29)
+        Me.PictureBox1.Size = New System.Drawing.Size(63, 36)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
         'Confirm_Button
         '
-        Me.Confirm_Button.Location = New System.Drawing.Point(324, 81)
-        Me.Confirm_Button.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Confirm_Button.Location = New System.Drawing.Point(432, 100)
+        Me.Confirm_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Confirm_Button.Name = "Confirm_Button"
-        Me.Confirm_Button.Size = New System.Drawing.Size(56, 29)
+        Me.Confirm_Button.Size = New System.Drawing.Size(75, 36)
         Me.Confirm_Button.TabIndex = 2
         Me.Confirm_Button.Text = "Pay"
         Me.Confirm_Button.UseVisualStyleBackColor = True
         '
         'Return_Button
         '
-        Me.Return_Button.Location = New System.Drawing.Point(185, 81)
-        Me.Return_Button.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Return_Button.Location = New System.Drawing.Point(247, 100)
+        Me.Return_Button.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Return_Button.Name = "Return_Button"
-        Me.Return_Button.Size = New System.Drawing.Size(67, 29)
+        Me.Return_Button.Size = New System.Drawing.Size(89, 36)
         Me.Return_Button.TabIndex = 1
         Me.Return_Button.Text = "Return"
         Me.Return_Button.UseVisualStyleBackColor = True
@@ -124,10 +124,10 @@ Partial Class FormConfirm
         '
         Me.RBDebit.AutoSize = True
         Me.RBDebit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RBDebit.Location = New System.Drawing.Point(319, 43)
-        Me.RBDebit.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.RBDebit.Location = New System.Drawing.Point(425, 53)
+        Me.RBDebit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.RBDebit.Name = "RBDebit"
-        Me.RBDebit.Size = New System.Drawing.Size(59, 21)
+        Me.RBDebit.Size = New System.Drawing.Size(70, 24)
         Me.RBDebit.TabIndex = 1
         Me.RBDebit.TabStop = True
         Me.RBDebit.Text = "Debit"
@@ -137,10 +137,10 @@ Partial Class FormConfirm
         '
         Me.RBCredit.AutoSize = True
         Me.RBCredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RBCredit.Location = New System.Drawing.Point(138, 43)
-        Me.RBCredit.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.RBCredit.Location = New System.Drawing.Point(184, 53)
+        Me.RBCredit.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.RBCredit.Name = "RBCredit"
-        Me.RBCredit.Size = New System.Drawing.Size(63, 21)
+        Me.RBCredit.Size = New System.Drawing.Size(75, 24)
         Me.RBCredit.TabIndex = 0
         Me.RBCredit.TabStop = True
         Me.RBCredit.Text = "Credit"
@@ -175,11 +175,11 @@ Partial Class FormConfirm
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(7, 8)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.GroupBox2.Location = New System.Drawing.Point(9, 10)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GroupBox2.Size = New System.Drawing.Size(586, 440)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(782, 544)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Journey Summary"
@@ -187,10 +187,9 @@ Partial Class FormConfirm
         'LabelArrivalBack
         '
         Me.LabelArrivalBack.AutoSize = True
-        Me.LabelArrivalBack.Location = New System.Drawing.Point(151, 402)
-        Me.LabelArrivalBack.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelArrivalBack.Location = New System.Drawing.Point(201, 495)
         Me.LabelArrivalBack.Name = "LabelArrivalBack"
-        Me.LabelArrivalBack.Size = New System.Drawing.Size(82, 18)
+        Me.LabelArrivalBack.Size = New System.Drawing.Size(103, 24)
         Me.LabelArrivalBack.TabIndex = 22
         Me.LabelArrivalBack.Text = "ArrivalBack"
         Me.LabelArrivalBack.Visible = False
@@ -198,10 +197,9 @@ Partial Class FormConfirm
         'LabelDepartureBack
         '
         Me.LabelDepartureBack.AutoSize = True
-        Me.LabelDepartureBack.Location = New System.Drawing.Point(151, 370)
-        Me.LabelDepartureBack.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelDepartureBack.Location = New System.Drawing.Point(201, 455)
         Me.LabelDepartureBack.Name = "LabelDepartureBack"
-        Me.LabelDepartureBack.Size = New System.Drawing.Size(107, 18)
+        Me.LabelDepartureBack.Size = New System.Drawing.Size(134, 24)
         Me.LabelDepartureBack.TabIndex = 21
         Me.LabelDepartureBack.Text = "DepartureBack"
         Me.LabelDepartureBack.Visible = False
@@ -209,10 +207,9 @@ Partial Class FormConfirm
         'LabelClassBack
         '
         Me.LabelClassBack.AutoSize = True
-        Me.LabelClassBack.Location = New System.Drawing.Point(151, 339)
-        Me.LabelClassBack.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelClassBack.Location = New System.Drawing.Point(201, 417)
         Me.LabelClassBack.Name = "LabelClassBack"
-        Me.LabelClassBack.Size = New System.Drawing.Size(80, 18)
+        Me.LabelClassBack.Size = New System.Drawing.Size(96, 24)
         Me.LabelClassBack.TabIndex = 20
         Me.LabelClassBack.Text = "ClassBack"
         Me.LabelClassBack.Visible = False
@@ -220,10 +217,9 @@ Partial Class FormConfirm
         'LabelTrainBack
         '
         Me.LabelTrainBack.AutoSize = True
-        Me.LabelTrainBack.Location = New System.Drawing.Point(151, 309)
-        Me.LabelTrainBack.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelTrainBack.Location = New System.Drawing.Point(201, 380)
         Me.LabelTrainBack.Name = "LabelTrainBack"
-        Me.LabelTrainBack.Size = New System.Drawing.Size(75, 18)
+        Me.LabelTrainBack.Size = New System.Drawing.Size(94, 24)
         Me.LabelTrainBack.TabIndex = 19
         Me.LabelTrainBack.Text = "TrainBack"
         Me.LabelTrainBack.Visible = False
@@ -231,68 +227,62 @@ Partial Class FormConfirm
         'LabelArrivalGo
         '
         Me.LabelArrivalGo.AutoSize = True
-        Me.LabelArrivalGo.Location = New System.Drawing.Point(151, 227)
-        Me.LabelArrivalGo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelArrivalGo.Location = New System.Drawing.Point(201, 279)
         Me.LabelArrivalGo.Name = "LabelArrivalGo"
-        Me.LabelArrivalGo.Size = New System.Drawing.Size(69, 18)
+        Me.LabelArrivalGo.Size = New System.Drawing.Size(87, 24)
         Me.LabelArrivalGo.TabIndex = 18
         Me.LabelArrivalGo.Text = "ArrivalGo"
+        Me.LabelArrivalGo.Visible = False
         '
         'LabelDepartureGo
         '
         Me.LabelDepartureGo.AutoSize = True
-        Me.LabelDepartureGo.Location = New System.Drawing.Point(151, 196)
-        Me.LabelDepartureGo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelDepartureGo.Location = New System.Drawing.Point(201, 241)
         Me.LabelDepartureGo.Name = "LabelDepartureGo"
-        Me.LabelDepartureGo.Size = New System.Drawing.Size(94, 18)
+        Me.LabelDepartureGo.Size = New System.Drawing.Size(118, 24)
         Me.LabelDepartureGo.TabIndex = 17
         Me.LabelDepartureGo.Text = "DepartureGo"
         '
         'LabelClassGo
         '
         Me.LabelClassGo.AutoSize = True
-        Me.LabelClassGo.Location = New System.Drawing.Point(151, 166)
-        Me.LabelClassGo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelClassGo.Location = New System.Drawing.Point(201, 204)
         Me.LabelClassGo.Name = "LabelClassGo"
-        Me.LabelClassGo.Size = New System.Drawing.Size(67, 18)
+        Me.LabelClassGo.Size = New System.Drawing.Size(80, 24)
         Me.LabelClassGo.TabIndex = 16
         Me.LabelClassGo.Text = "ClassGo"
         '
         'LabelTrainGo
         '
         Me.LabelTrainGo.AutoSize = True
-        Me.LabelTrainGo.Location = New System.Drawing.Point(151, 135)
-        Me.LabelTrainGo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelTrainGo.Location = New System.Drawing.Point(201, 166)
         Me.LabelTrainGo.Name = "LabelTrainGo"
-        Me.LabelTrainGo.Size = New System.Drawing.Size(62, 18)
+        Me.LabelTrainGo.Size = New System.Drawing.Size(78, 24)
         Me.LabelTrainGo.TabIndex = 15
         Me.LabelTrainGo.Text = "TrainGo"
         '
         'LabelLine2
         '
         Me.LabelLine2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.LabelLine2.Location = New System.Drawing.Point(5, 261)
-        Me.LabelLine2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelLine2.Location = New System.Drawing.Point(7, 321)
         Me.LabelLine2.Name = "LabelLine2"
-        Me.LabelLine2.Size = New System.Drawing.Size(576, 1)
+        Me.LabelLine2.Size = New System.Drawing.Size(768, 1)
         Me.LabelLine2.TabIndex = 14
         '
         'LabelLine1
         '
         Me.LabelLine1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.LabelLine1.Location = New System.Drawing.Point(5, 87)
-        Me.LabelLine1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelLine1.Location = New System.Drawing.Point(7, 107)
         Me.LabelLine1.Name = "LabelLine1"
-        Me.LabelLine1.Size = New System.Drawing.Size(576, 1)
+        Me.LabelLine1.Size = New System.Drawing.Size(768, 1)
         Me.LabelLine1.TabIndex = 12
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(19, 402)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(25, 495)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(56, 18)
+        Me.Label8.Size = New System.Drawing.Size(72, 24)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Arrival :"
         Me.Label8.Visible = False
@@ -300,10 +290,9 @@ Partial Class FormConfirm
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(19, 370)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(25, 455)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(81, 18)
+        Me.Label9.Size = New System.Drawing.Size(103, 24)
         Me.Label9.TabIndex = 10
         Me.Label9.Text = "Departure :"
         Me.Label9.Visible = False
@@ -311,10 +300,9 @@ Partial Class FormConfirm
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(19, 339)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Location = New System.Drawing.Point(25, 417)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(54, 18)
+        Me.Label10.Size = New System.Drawing.Size(65, 24)
         Me.Label10.TabIndex = 9
         Me.Label10.Text = "Class :"
         Me.Label10.Visible = False
@@ -322,10 +310,9 @@ Partial Class FormConfirm
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(19, 309)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Location = New System.Drawing.Point(25, 380)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(73, 18)
+        Me.Label11.Size = New System.Drawing.Size(93, 24)
         Me.Label11.TabIndex = 8
         Me.Label11.Text = "Train No :"
         Me.Label11.Visible = False
@@ -333,10 +320,9 @@ Partial Class FormConfirm
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(19, 278)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Location = New System.Drawing.Point(25, 342)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(134, 18)
+        Me.Label12.Size = New System.Drawing.Size(169, 24)
         Me.Label12.TabIndex = 7
         Me.Label12.Text = "Destination - Origin"
         Me.Label12.Visible = False
@@ -344,86 +330,80 @@ Partial Class FormConfirm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(20, 227)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(27, 279)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(56, 18)
+        Me.Label7.Size = New System.Drawing.Size(72, 24)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Arrival :"
+        Me.Label7.Visible = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(20, 196)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(27, 241)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(81, 18)
+        Me.Label6.Size = New System.Drawing.Size(103, 24)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Departure :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(20, 166)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(27, 204)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(54, 18)
+        Me.Label5.Size = New System.Drawing.Size(65, 24)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Class :"
         '
         'LabelTotal
         '
         Me.LabelTotal.AutoSize = True
-        Me.LabelTotal.Location = New System.Drawing.Point(20, 59)
-        Me.LabelTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelTotal.Location = New System.Drawing.Point(27, 73)
         Me.LabelTotal.Name = "LabelTotal"
-        Me.LabelTotal.Size = New System.Drawing.Size(49, 18)
+        Me.LabelTotal.Size = New System.Drawing.Size(61, 24)
         Me.LabelTotal.TabIndex = 1
         Me.LabelTotal.Text = "Total :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(20, 135)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(27, 166)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 18)
+        Me.Label4.Size = New System.Drawing.Size(93, 24)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Train No :"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(20, 31)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(27, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(133, 18)
+        Me.Label1.Size = New System.Drawing.Size(166, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Grand Total (MYR)"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(20, 104)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(27, 128)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(134, 18)
+        Me.Label3.Size = New System.Drawing.Size(169, 24)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Origin - Destination"
         '
         'FormConfirm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(600, 549)
+        Me.ClientSize = New System.Drawing.Size(800, 676)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "FormConfirm"
-        Me.Padding = New System.Windows.Forms.Padding(7, 8, 7, 0)
+        Me.Padding = New System.Windows.Forms.Padding(9, 10, 9, 0)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormConfirm"
         Me.GroupBox1.ResumeLayout(False)

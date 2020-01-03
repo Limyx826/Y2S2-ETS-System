@@ -190,6 +190,14 @@ Public Class FormSelect
     Dim dt2 As String
     Dim dt3 As String
     Dim dt4 As String
+    Dim str5 As String
+    Dim str6 As String
+    Dim str7 As String
+    Dim str8 As String
+    Dim dt5 As String
+    Dim dt6 As String
+    Dim dt7 As String
+    Dim dt8 As String
     Private Sub FormSelect_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With ListView1
             With .Items
@@ -258,10 +266,69 @@ Public Class FormSelect
             RB3.Text = str3 + " , departure time " + dt3
             RB4.Text = str4 + " , departure time " + dt4
         End If
+        If Frontpage.RBReturn.Checked = True Then
+            If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
+                str5 = "ES1221"
+                dt5 = "1.00AM,"
+                str6 = "ES1222"
+                dt6 = "2.00AM"
+                str7 = "ES1223"
+                dt7 = "4.00AM"
+                str8 = "ES1224"
+                dt8 = "6.00AM"
+                RB5.Text = str5 + " , departure time " + dt5
+                RB6.Text = str6 + " , departure time " + dt6
+                RB7.Text = str7 + " , departure time " + dt7
+                RB8.Text = str8 + " , departure time " + dt8
+            ElseIf Frontpage.ComboBox3Time.SelectedIndex = 1 Then
+                str5 = "ES1225"
+                dt5 = "7.00AM"
+                str6 = "ES1226"
+                dt6 = "8.00AM"
+                str7 = "ES1227"
+                dt7 = "9.00AM,"
+                str8 = "ES1228"
+                dt8 = "11.00AM"
+                RB5.Text = str5 + " , departure time " + dt5
+                RB6.Text = str6 + " , departure time " + dt6
+                RB7.Text = str7 + " , departure time " + dt7
+                RB8.Text = str8 + " , departure time " + dt8
+            ElseIf Frontpage.ComboBox3Time.SelectedIndex = 2 Then
+                str5 = "ES1229"
+                dt5 = "11.00PM"
+                str6 = "ES1230"
+                dt6 = "2.00PM"
+                str7 = "ES1231"
+                dt7 = "4.00PM"
+                str8 = "ES1232"
+                dt8 = "6.00PM"
+                RB5.Text = str5 + " , departure time " + dt5
+                RB6.Text = str6 + " , departure time " + dt6
+                RB7.Text = str7 + " , departure time " + dt7
+                RB8.Text = str8 + " , departure time " + dt8
+            Else
+                str5 = "ES1233"
+                dt5 = "2.00PM"
+                str6 = "ES1234"
+                dt6 = "7.00PM"
+                str7 = "ES1235"
+                dt7 = "9.00PM"
+                str8 = "ES1236"
+                dt8 = "11.00PM"
+                RB5.Text = str5 + " , departure time " + dt5
+                RB6.Text = str6 + " , departure time " + dt6
+                RB7.Text = str7 + " , departure time " + dt7
+                RB8.Text = str8 + " , departure time " + dt8
+            End If
+        Else
+            TabControl1.TabPages.Remove(TabPage2)
+        End If
     End Sub
 
     Public TrainGo As String
     Public DepartureGo As String
+    Public TrainBack As String
+    Public DepartureBack As String
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
         If RB1.Checked = True Then
             TrainGo = str1
@@ -275,6 +342,21 @@ Public Class FormSelect
         ElseIf RB4.Checked = True Then
             TrainGo = str4
             DepartureGo = dt4
+        End If
+        If Frontpage.RBReturn.Checked = True Then
+            If RB5.Checked = True Then
+                TrainBack = str5
+                DepartureBack = dt5
+            ElseIf RB6.Checked = True Then
+                TrainBack = str6
+                DepartureBack = dt6
+            ElseIf RB7.Checked = True Then
+                TrainBack = str7
+                DepartureBack = dt7
+            ElseIf RB8.Checked = True Then
+                TrainBack = str8
+                DepartureBack = dt8
+            End If
         End If
         FormSeat.Show()
         Me.Close()
