@@ -2,9 +2,14 @@
     Const TrainPrice1S As Double = 7
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim CurrentHeight As Integer = Me.Height
-        'LabelTrainGo = 
-        'LabelDepartureGo =
-        'LabelArrivalGo =
+        LabelTrainGo.Text = FormSelect.TrainGo
+        If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
+            LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
+        Else
+            LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
+        End If
+        LabelDepartureGo.Text = FormSelect.DepartureGo
+        LabelArrivalGo.Text = FormSelect.DepartureGo
 
         If Frontpage.RBReturn.Checked = True Then
             Label12.Visible = True
@@ -16,6 +21,15 @@
             LabelClassBack.Visible = True
             LabelDepartureBack.Visible = True
             LabelArrivalBack.Visible = True
+
+            LabelTrainBack.Text = FormSelect.TrainGo
+            If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
+                LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
+            Else
+                LabelClassGo.Text = Frontpage.ComboBox4Class.SelectedItem
+            End If
+            LabelDepartureBack.Text = FormSelect.DepartureGo
+            LabelArrivalBack.Text = FormSelect.DepartureGo
         End If
 
 

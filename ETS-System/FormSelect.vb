@@ -186,8 +186,6 @@ Public Class FormSelect
     Dim str2 As String
     Dim str3 As String
     Dim str4 As String
-    Public TrainGo As String
-    Public DepartureGo As String
     Dim dt1 As String
     Dim dt2 As String
     Dim dt3 As String
@@ -209,61 +207,75 @@ Public Class FormSelect
 
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
             str1 = "ES1201"
-            dt1 = "departure time 6.00AM"
+            dt1 = "1.00AM,"
             str2 = "ES1202"
-            dt2 = "departure time 4.00AM"
+            dt2 = "2.00AM"
             str3 = "ES1203"
-            dt3 = "departure time 2.00AM"
+            dt3 = "4.00AM"
             str4 = "ES1204"
-            dt4 = "departure time 1.00AM,"
-            RB1.Text = str1 + " , " + dt1
-            RB2.Text = str2 + " , " + dt2
-            RB3.Text = str3 + " , " + dt3
-            RB4.Text = str4 + " , " + dt4
+            dt4 = "6.00AM"
+            RB1.Text = str1 + " , departure time " + dt1
+            RB2.Text = str2 + " , departure time " + dt2
+            RB3.Text = str3 + " , departure time " + dt3
+            RB4.Text = str4 + " , departure time " + dt4
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 1 Then
             str1 = "ES1205"
-            dt1 = "departure time 11.00AM"
+            dt1 = "7.00AM"
             str2 = "ES1206"
-            dt2 = "departure time 9.00AM,"
+            dt2 = "8.00AM"
             str3 = "ES1207"
-            dt3 = "departure time 8.00AM"
+            dt3 = "9.00AM,"
             str4 = "ES1208"
-            dt4 = "departure time 7.00AM"
-            RB1.Text = str1 + " , " + dt1
-            RB2.Text = str2 + " , " + dt2
-            RB3.Text = str3 + " , " + dt3
-            RB4.Text = str4 + " , " + dt4
+            dt4 = "11.00AM"
+            RB1.Text = str1 + " , departure time " + dt1
+            RB2.Text = str2 + " , departure time " + dt2
+            RB3.Text = str3 + " , departure time " + dt3
+            RB4.Text = str4 + " , departure time " + dt4
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 2 Then
             str1 = "ES1209"
-            dt1 = "departure time 6.00PM"
+            dt1 = "11.00PM"
             str2 = "ES1210"
-            dt2 = "departure time 4.00PM"
+            dt2 = "2.00PM"
             str3 = "ES1211"
-            dt3 = "departure time 2.00PM"
+            dt3 = "4.00PM"
             str4 = "ES1212"
-            dt4 = "departure time 11.00PM,"
-            RB1.Text = str1 + " , " + dt1
-            RB2.Text = str2 + " , " + dt2
-            RB3.Text = str3 + " , " + dt3
-            RB4.Text = str4 + " , " + dt4
+            dt4 = "6.00PM"
+            RB1.Text = str1 + " , departure time " + dt1
+            RB2.Text = str2 + " , departure time " + dt2
+            RB3.Text = str3 + " , departure time " + dt3
+            RB4.Text = str4 + " , departure time " + dt4
         Else
-            str1 =
-            dt1 =
-            str2 =
-            dt2 =
-            str3 =
-            dt3 =
-            str4 =
-            dt4 =
-            RB1.Text = "ES1213 , departure time 11.00PM,"
-            RB2.Text = "ES1214 , departure time 9.00PM,"
-            RB3.Text = "ES1215 , departure time 7.00PM,"
-            RB4.Text = "ES1216 , departure time 2.00PM,"
+            str1 = "ES1213"
+            dt1 = "2.00PM"
+            str2 = "ES1214"
+            dt2 = "7.00PM"
+            str3 = "ES1215"
+            dt3 = "9.00PM"
+            str4 = "ES1216"
+            dt4 = "11.00PM"
+            RB1.Text = str1 + " , departure time " + dt1
+            RB2.Text = str2 + " , departure time " + dt2
+            RB3.Text = str3 + " , departure time " + dt3
+            RB4.Text = str4 + " , departure time " + dt4
         End If
     End Sub
 
+    Public TrainGo As String
+    Public DepartureGo As String
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-
+        If RB1.Checked = True Then
+            TrainGo = str1
+            DepartureGo = dt1
+        ElseIf RB2.Checked = True Then
+            TrainGo = str2
+            DepartureGo = dt2
+        ElseIf RB3.Checked = True Then
+            TrainGo = str3
+            DepartureGo = dt3
+        ElseIf RB4.Checked = True Then
+            TrainGo = str4
+            DepartureGo = dt4
+        End If
         FormSeat.Show()
         Me.Close()
     End Sub
