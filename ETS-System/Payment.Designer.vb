@@ -119,12 +119,12 @@ Partial Class Payment
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(152, 133)
+        Me.Label3.Location = New System.Drawing.Point(91, 133)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 24)
+        Me.Label3.Size = New System.Drawing.Size(113, 24)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "CVV :"
+        Me.Label3.Text = "CVV / CVC :"
         '
         'Label2
         '

@@ -3,16 +3,20 @@
     Const TrainPrice1C As Double = 5.5
     Private Sub FormConfirm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim Total = Frontpage.NumChild * TrainPrice1C * (Frontpage.ComboBox2Destination.SelectedIndex - Frontpage.ComboBox1Origin.SelectedIndex) + Frontpage.NumAdult * TrainPrice1S * (Frontpage.ComboBox2Destination.SelectedIndex - Frontpage.ComboBox1Origin.SelectedIndex)
-        If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
-            Total *= 120%
+        If Frontpage.RBReturn.Checked = True Then
+            Total *= 2
+        End If
+        If Frontpage.ComboBox4Class.SelectedIndex = 1 Then
+            Total *= 1.2
         End If
         If FormLogin.MemIN = 1 Then
-            Total *= 90%
+            Total *= 0.9
         End If
 
         LabelTotal.Text = Math.Abs(Total)
 
         Dim CurrentHeight As Integer = Me.Height
+
         Label3.Text = Frontpage.ComboBox1Origin.SelectedItem + " - " + Frontpage.ComboBox2Destination.SelectedItem
         LabelTrainGo.Text = FormSelect.TrainGo
         If Frontpage.ComboBox4Class.SelectedIndex = 0 Then
@@ -47,7 +51,7 @@
 
 
 
-        If Label8.Visible = False Then
+        If Label9.Visible = False Then
             Me.Height = CurrentHeight - 150
         End If
     End Sub

@@ -85,12 +85,13 @@
     End Sub
 
     Public Sub CreateICTB(ByVal panelname As String)
-        Dim ICTB As TextBox
-        ICTB = New TextBox
+        Dim ICTB As MaskedTextBox
+        ICTB = New MaskedTextBox
 
         With ICTB
             .Location = New Point(157, 126)
             .Size = New Size(328, 22)
+            .Mask = "999999-99-9999"
         End With
 
         For Each controlObject As Control In FlowLayoutPanel1.Controls
@@ -106,8 +107,9 @@
     End Sub
 
     Private Sub CheckTextBox(T As Integer)
-        Dim str As String = "TextBox"
-        Dim c As Control = Me.Controls(str + T.ToString)
+        Dim ControlName As String = "Namespace.ControlName" + T.ToString
+        Dim c As Control = Me.Controls(ControlName)
+
 
         If c.Text = "" Then
             MessageBox.Show("Please Fill Up all", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -115,9 +117,9 @@
     End Sub
 
     Private Sub Button_Next_Click(sender As Object, e As EventArgs) Handles Button_Next.Click
-        For x As Integer = 0 To 2 * FormSeat.TotalPass
-            CheckTextBox(x)
-        Next
+        'For x As Integer = 0 To 2 * FormSeat.TotalPass
+        '    CheckTextBox(x)
+        'Next
         FormConfirm.Show()
         Me.Hide()
     End Sub
