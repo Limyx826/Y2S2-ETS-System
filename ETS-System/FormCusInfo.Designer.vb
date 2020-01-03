@@ -163,7 +163,7 @@ Partial Class FormCusInfo
         Me.DoubleBuffered = True
         Me.Name = "FormCusInfo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormCusInfo"
+        Me.Text = "Customer Info"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.FlowLayoutPanel1.ResumeLayout(False)

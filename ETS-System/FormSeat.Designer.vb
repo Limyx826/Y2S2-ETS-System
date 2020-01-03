@@ -588,7 +588,7 @@ Partial Class FormSeat
         Me.DoubleBuffered = True
         Me.Name = "FormSeat"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormSeat"
+        Me.Text = "Seat Selection"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

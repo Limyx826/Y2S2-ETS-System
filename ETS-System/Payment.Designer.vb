@@ -93,7 +93,7 @@ Partial Class Payment
         Me.MaskedTextBox3.Location = New System.Drawing.Point(220, 95)
         Me.MaskedTextBox3.Mask = "9999-9999-9999-9999"
         Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(185, 29)
+        Me.MaskedTextBox3.Size = New System.Drawing.Size(218, 29)
         Me.MaskedTextBox3.TabIndex = 18
         '
         'ComboBox1

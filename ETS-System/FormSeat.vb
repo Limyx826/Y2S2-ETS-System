@@ -28,12 +28,20 @@
 
                 End If
             End If
+            NextButton.Enabled = False
+            If seatpass = TotalPass Then
+                NextButton.Enabled = True
+            End If
         Else
             If B.BackColor <> Color.Gainsboro Then
                 If B.BackColor <> Color.CornflowerBlue Then
                     B.BackColor = Color.CornflowerBlue
                     seatpass -= 1
                 End If
+            End If
+            NextButton.Enabled = False
+            If seatpass = TotalPass Then
+                NextButton.Enabled = True
             End If
         End If
     End Sub
@@ -185,7 +193,7 @@
     Public TotalPass As Integer
     Private Sub FormSeat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TotalPass = Frontpage.NumAdult + Frontpage.NumChild
-
+        NextButton.Enabled = False
     End Sub
 End Class
 

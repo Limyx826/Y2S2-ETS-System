@@ -1,5 +1,6 @@
 ﻿Public Class Payment
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Button1.Enabled = False
         FormLogin.Close()
         FormSeat.Close()
         FormSelect.Close()
@@ -9,6 +10,11 @@
     End Sub
 
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+        If String.Compare(MaskedTextBox2.Text, "") <> 0 And String.Compare(MaskedTextBox3.Text, "") <> 0 And
+        String.Compare(ComboBox1.SelectedItem, "") <> 0 And String.Compare(ComboBox2.SelectedItem, "") <> 0 And String.Compare(MaskedTextBox6.Text, "") <> 0 Then
+
+            Button1.Enabled = True
+        End If
 
     End Sub
 

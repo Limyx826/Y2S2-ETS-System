@@ -63,8 +63,6 @@ Partial Class FormDatabase
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TicketBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TicketTableAdapter = New ETS_System.JCLODataSetTableAdapters.TicketTableAdapter()
         Me.TicketDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -72,6 +70,8 @@ Partial Class FormDatabase
         Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TicketBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TicketTableAdapter = New ETS_System.JCLODataSetTableAdapters.TicketTableAdapter()
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TimetableBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,8 +80,8 @@ Partial Class FormDatabase
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
-        CType(Me.TicketBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TicketDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TicketBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -186,6 +186,7 @@ Partial Class FormDatabase
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 27)
         Me.BindingNavigatorPositionItem.Text = "0"
@@ -409,15 +410,6 @@ Partial Class FormDatabase
         Me.TabPage2.Text = "Tickets"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'TicketBindingSource
-        '
-        Me.TicketBindingSource.DataMember = "Ticket"
-        Me.TicketBindingSource.DataSource = Me.JCLODataSet
-        '
-        'TicketTableAdapter
-        '
-        Me.TicketTableAdapter.ClearBeforeFill = True
-        '
         'TicketDataGridView
         '
         Me.TicketDataGridView.AutoGenerateColumns = False
@@ -479,6 +471,15 @@ Partial Class FormDatabase
         Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
         Me.DataGridViewTextBoxColumn23.Width = 125
         '
+        'TicketBindingSource
+        '
+        Me.TicketBindingSource.DataMember = "Ticket"
+        Me.TicketBindingSource.DataSource = Me.JCLODataSet
+        '
+        'TicketTableAdapter
+        '
+        Me.TicketTableAdapter.ClearBeforeFill = True
+        '
         'FormDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -488,7 +489,7 @@ Partial Class FormDatabase
         Me.Controls.Add(Me.TimetableBindingNavigator)
         Me.Controls.Add(Me.Button1)
         Me.Name = "FormDatabase"
-        Me.Text = "FormDatabase"
+        Me.Text = "Database Access"
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TimetableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TimetableBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -498,8 +499,8 @@ Partial Class FormDatabase
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
-        CType(Me.TicketBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TicketDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TicketBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

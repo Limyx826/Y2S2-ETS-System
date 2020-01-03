@@ -30,6 +30,7 @@ Partial Class FormConfirm
         Me.RBDebit = New System.Windows.Forms.RadioButton()
         Me.RBCredit = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label = New System.Windows.Forms.Label()
         Me.LabelArrivalBack = New System.Windows.Forms.Label()
         Me.LabelDepartureBack = New System.Windows.Forms.Label()
         Me.LabelClassBack = New System.Windows.Forms.Label()
@@ -52,7 +53,6 @@ Partial Class FormConfirm
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -185,6 +185,15 @@ Partial Class FormConfirm
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Journey Summary"
+        '
+        'Label
+        '
+        Me.Label.AutoSize = True
+        Me.Label.Location = New System.Drawing.Point(25, 73)
+        Me.Label.Name = "Label"
+        Me.Label.Size = New System.Drawing.Size(90, 24)
+        Me.Label.TabIndex = 23
+        Me.Label.Text = "Total: RM"
         '
         'LabelArrivalBack
         '
@@ -393,15 +402,6 @@ Partial Class FormConfirm
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Origin - Destination"
         '
-        'Label
-        '
-        Me.Label.AutoSize = True
-        Me.Label.Location = New System.Drawing.Point(25, 73)
-        Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(90, 24)
-        Me.Label.TabIndex = 23
-        Me.Label.Text = "Total: RM"
-        '
         'FormConfirm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -416,7 +416,7 @@ Partial Class FormConfirm
         Me.Name = "FormConfirm"
         Me.Padding = New System.Windows.Forms.Padding(9, 10, 9, 0)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormConfirm"
+        Me.Text = "Payment Confirm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

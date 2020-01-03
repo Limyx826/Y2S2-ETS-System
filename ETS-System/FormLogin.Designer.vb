@@ -53,64 +53,60 @@ Partial Class FormLogin
         '
         'UsernameLabel
         '
-        Me.UsernameLabel.Location = New System.Drawing.Point(2, 6)
+        Me.UsernameLabel.Location = New System.Drawing.Point(2, 5)
         Me.UsernameLabel.Name = "UsernameLabel"
-        Me.UsernameLabel.Size = New System.Drawing.Size(248, 29)
+        Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
         Me.UsernameLabel.TabIndex = 0
         Me.UsernameLabel.Text = "&User name"
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Location = New System.Drawing.Point(6, 78)
+        Me.PasswordLabel.Location = New System.Drawing.Point(5, 62)
         Me.PasswordLabel.Name = "PasswordLabel"
-        Me.PasswordLabel.Size = New System.Drawing.Size(248, 29)
+        Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
         Me.PasswordLabel.TabIndex = 2
         Me.PasswordLabel.Text = "&Password"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(6, 39)
-        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(5, 31)
         Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.Size = New System.Drawing.Size(247, 26)
+        Me.UsernameTextBox.Size = New System.Drawing.Size(220, 22)
         Me.UsernameTextBox.TabIndex = 1
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(6, 110)
-        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(5, 88)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(247, 26)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(220, 22)
         Me.PasswordTextBox.TabIndex = 3
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(222, 204)
-        Me.OK.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.OK.Location = New System.Drawing.Point(197, 163)
         Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(106, 29)
+        Me.OK.Size = New System.Drawing.Size(94, 23)
         Me.OK.TabIndex = 4
         Me.OK.Text = "&OK"
         '
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(338, 204)
-        Me.Cancel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Cancel.Location = New System.Drawing.Point(300, 163)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(106, 29)
+        Me.Cancel.Size = New System.Drawing.Size(94, 23)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(94, 142)
+        Me.LinkLabel1.Location = New System.Drawing.Point(84, 114)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(162, 20)
+        Me.LinkLabel1.Size = New System.Drawing.Size(144, 17)
         Me.LinkLabel1.TabIndex = 6
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Not existing member?"
@@ -120,18 +116,17 @@ Partial Class FormLogin
         Me.LogoPictureBox.BackColor = System.Drawing.Color.Transparent
         Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
-        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(176, 241)
+        Me.LogoPictureBox.Size = New System.Drawing.Size(156, 193)
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
         '
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(345, 4)
+        Me.LinkLabel2.Location = New System.Drawing.Point(307, 3)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(100, 20)
+        Me.LinkLabel2.Size = New System.Drawing.Size(86, 17)
         Me.LinkLabel2.TabIndex = 7
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Staff Access"
@@ -144,10 +139,9 @@ Partial Class FormLogin
         Me.CustomerPanel.Controls.Add(Me.LinkLabel1)
         Me.CustomerPanel.Controls.Add(Me.UsernameTextBox)
         Me.CustomerPanel.Controls.Add(Me.PasswordTextBox)
-        Me.CustomerPanel.Location = New System.Drawing.Point(179, 31)
-        Me.CustomerPanel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.CustomerPanel.Location = New System.Drawing.Point(159, 25)
         Me.CustomerPanel.Name = "CustomerPanel"
-        Me.CustomerPanel.Size = New System.Drawing.Size(267, 169)
+        Me.CustomerPanel.Size = New System.Drawing.Size(237, 135)
         Me.CustomerPanel.TabIndex = 8
         '
         'StaffPanel
@@ -157,57 +151,54 @@ Partial Class FormLogin
         Me.StaffPanel.Controls.Add(Me.StaffIDTextBox)
         Me.StaffPanel.Controls.Add(Me.StaffPasswordTextBox)
         Me.StaffPanel.Enabled = False
-        Me.StaffPanel.Location = New System.Drawing.Point(179, 31)
-        Me.StaffPanel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.StaffPanel.Location = New System.Drawing.Point(159, 25)
         Me.StaffPanel.Name = "StaffPanel"
-        Me.StaffPanel.Size = New System.Drawing.Size(267, 169)
+        Me.StaffPanel.Size = New System.Drawing.Size(237, 135)
         Me.StaffPanel.TabIndex = 9
         Me.StaffPanel.Visible = False
         '
         'StaffIDLabel
         '
-        Me.StaffIDLabel.Location = New System.Drawing.Point(2, 6)
+        Me.StaffIDLabel.Location = New System.Drawing.Point(2, 5)
         Me.StaffIDLabel.Name = "StaffIDLabel"
-        Me.StaffIDLabel.Size = New System.Drawing.Size(248, 29)
+        Me.StaffIDLabel.Size = New System.Drawing.Size(220, 23)
         Me.StaffIDLabel.TabIndex = 0
         Me.StaffIDLabel.Text = "&Staff ID"
         Me.StaffIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'StaffPasswordLabel
         '
-        Me.StaffPasswordLabel.Location = New System.Drawing.Point(6, 78)
+        Me.StaffPasswordLabel.Location = New System.Drawing.Point(5, 62)
         Me.StaffPasswordLabel.Name = "StaffPasswordLabel"
-        Me.StaffPasswordLabel.Size = New System.Drawing.Size(248, 29)
+        Me.StaffPasswordLabel.Size = New System.Drawing.Size(220, 23)
         Me.StaffPasswordLabel.TabIndex = 2
         Me.StaffPasswordLabel.Text = "&Password"
         Me.StaffPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'StaffIDTextBox
         '
-        Me.StaffIDTextBox.Location = New System.Drawing.Point(6, 39)
-        Me.StaffIDTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.StaffIDTextBox.Location = New System.Drawing.Point(5, 31)
         Me.StaffIDTextBox.Name = "StaffIDTextBox"
-        Me.StaffIDTextBox.Size = New System.Drawing.Size(247, 26)
+        Me.StaffIDTextBox.Size = New System.Drawing.Size(220, 22)
         Me.StaffIDTextBox.TabIndex = 1
         '
         'StaffPasswordTextBox
         '
-        Me.StaffPasswordTextBox.Location = New System.Drawing.Point(6, 110)
-        Me.StaffPasswordTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.StaffPasswordTextBox.Location = New System.Drawing.Point(5, 88)
         Me.StaffPasswordTextBox.Name = "StaffPasswordTextBox"
         Me.StaffPasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.StaffPasswordTextBox.Size = New System.Drawing.Size(247, 26)
+        Me.StaffPasswordTextBox.Size = New System.Drawing.Size(220, 22)
         Me.StaffPasswordTextBox.TabIndex = 3
         '
         'FormLogin
         '
         Me.AcceptButton = Me.OK
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CancelButton = Me.Cancel
-        Me.ClientSize = New System.Drawing.Size(451, 240)
+        Me.ClientSize = New System.Drawing.Size(401, 192)
         Me.Controls.Add(Me.CustomerPanel)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.Cancel)
@@ -216,13 +207,12 @@ Partial Class FormLogin
         Me.Controls.Add(Me.StaffPanel)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormLogin"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormLogin"
+        Me.Text = "Login"
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.CustomerPanel.ResumeLayout(False)
         Me.CustomerPanel.PerformLayout()

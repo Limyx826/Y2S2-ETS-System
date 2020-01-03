@@ -136,6 +136,7 @@ Partial Class FormSelect
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.ETS_System.My.Resources.Resources.ETS
         Me.PictureBox1.Location = New System.Drawing.Point(0, 1)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -150,7 +151,7 @@ Partial Class FormSelect
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Location = New System.Drawing.Point(59, 183)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(664, 231)
@@ -163,9 +164,9 @@ Partial Class FormSelect
         Me.TabPage1.Controls.Add(Me.RB3)
         Me.TabPage1.Controls.Add(Me.RB4)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(656, 202)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "One Way"
@@ -178,9 +179,9 @@ Partial Class FormSelect
         Me.TabPage2.Controls.Add(Me.RB6)
         Me.TabPage2.Controls.Add(Me.RB5)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(656, 202)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Return"
@@ -239,16 +240,20 @@ Partial Class FormSelect
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(56, 152)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(99, 17)
+        Me.Label1.Size = New System.Drawing.Size(106, 18)
         Me.Label1.TabIndex = 40
-        Me.Label1.Text = "TrainSelection"
+        Me.Label1.Text = "Train Selection"
         '
         'FormSelect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.ETS_System.My.Resources.Resources._25461_hd_images_for_website_background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 501)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TabControl1)
@@ -256,10 +261,11 @@ Partial Class FormSelect
         Me.Controls.Add(Me.NextButton)
         Me.Controls.Add(Me.Back_button)
         Me.Controls.Add(Me.ListView1)
+        Me.DoubleBuffered = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FormSelect"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormSelect"
+        Me.Text = "Select Train"
         CType(Me.JCLODataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
