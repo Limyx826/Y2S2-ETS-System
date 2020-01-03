@@ -182,6 +182,11 @@ Public Class FormSelect
         Me.Close()
     End Sub
 
+    Public str1 As String
+    Public str2 As String
+
+    Public str3 As String
+    Public str4 As String
     Private Sub FormSelect_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With ListView1
             With .Items
@@ -198,8 +203,8 @@ Public Class FormSelect
 
 
         If Frontpage.ComboBox3Time.SelectedIndex = 0 Then
-            RB1.Text = "ES1201 , departure time 6.00AM,"
-            RB2.Text = "ES1202 , departure time 4.00AM,"
+            RB1.Text = str1 = "ES1201" + " , " + "departure time 6.00AM,"
+            RB2.Text = str2 = "ES1202 , departure time 4.00AM,"
             RB3.Text = "ES1203 , departure time 2.00AM,"
             RB4.Text = "ES1204 , departure time 1.00AM,"
         ElseIf Frontpage.ComboBox3Time.SelectedIndex = 1 Then
